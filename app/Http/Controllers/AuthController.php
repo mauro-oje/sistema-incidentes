@@ -51,11 +51,11 @@ class AuthController extends Controller{
         if(Auth::attempt($userdata)){
 
             // De ser datos válidos nos mandara a la bienvenida
-            return Redirect::to('/');
+            return Redirect::to('inicio');
         }
 
         // En caso de que la autenticación haya fallado manda un mensaje al formulario de login y también regresamos los valores enviados con withInput().
-        return Redirect::to('inicio-de-sesion')
+        return Redirect::to('/')
                     ->with('mensaje_error', 'Tus datos son incorrectos')
                     ->withInput();
     }
