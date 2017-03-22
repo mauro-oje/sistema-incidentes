@@ -10,9 +10,15 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::get('/',[
+	'uses'	=>	'AuthController@getLogin',
+	'as'	=>	'admin.autenticacion.login'
+]);
+/*
 Route::get('/', function () {
     return view('inicio');
 });
+*/
 
 //Route::get('mail'); ,'middleware' => 'role:admin'
 

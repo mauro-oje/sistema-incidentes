@@ -55,7 +55,8 @@ class AuthController extends Controller{
         }
 
         // En caso de que la autenticación haya fallado manda un mensaje al formulario de login y también regresamos los valores enviados con withInput().
-        return Redirect::to('inicio-de-sesion')
+        //return Redirect::to('inicio-de-sesion')
+        return Redirect::to('/')
                     ->with('mensaje_error', 'Tus datos son incorrectos')
                     ->withInput();
     }
@@ -64,9 +65,9 @@ class AuthController extends Controller{
      * Muestra el formulario de login mostrando un mensaje de que cerró sesión.
      */
     public function logOut(){
-
+        //return Redirect::to('inicio-de-sesion')
         Auth::logout();
-        return Redirect::to('inicio-de-sesion')
+        return Redirect::to('/')
                     ->with('mensaje_error', 'Tu sesión ha sido cerrada.');
     }
 
