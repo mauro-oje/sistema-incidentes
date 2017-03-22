@@ -11,6 +11,12 @@
 |
 */
 
+Route::get('/',[
+	'uses'	=>	'AuthController@getLogin',
+	'as'	=>	'admin.autenticacion.login'
+]);
+
+/*
 Route::group(['prefix' => '/'],function(){
 	Route::get('/',[
 	'uses'	=>	'AuthController@getLogin',
@@ -22,7 +28,7 @@ Route::post('/',[
 	'as'	=>	'admin.autenticacion.loginPost'
 ]);
 });
-
+*/
 /*
 Route::get('/', function () {
     return view('inicio');
