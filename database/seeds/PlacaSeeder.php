@@ -32,6 +32,36 @@ class PlacaSeeder extends Seeder
         ]);
         PlacaMadre::create([
 			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68-V LX',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68-V LX',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68-V LX',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68-V LX',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68-V LX',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
 			'modelo_placa' =>'P8Z68-V PRO',
 			'version'      =>'1.0',
 			'disponible'   =>'si'
@@ -40,6 +70,66 @@ class PlacaSeeder extends Seeder
 			'marca_placa'  =>'Asus',
 			'modelo_placa' =>'P8Z68 DELUXE',
 			'version'      =>'1.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68 DELUXE',
+			'version'      =>'1.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68 DELUXE',
+			'version'      =>'1.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68 DELUXE',
+			'version'      =>'1.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68 DELUXE',
+			'version'      =>'1.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68 DELUXE',
+			'version'      =>'1.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68-V GEN3',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68-V GEN3',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68-V GEN3',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68-V GEN3',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asus',
+			'modelo_placa' =>'P8Z68-V GEN3',
+			'version'      =>'1.0',
 			'disponible'   =>'si'
         ]);
         PlacaMadre::create([
@@ -56,6 +146,66 @@ class PlacaSeeder extends Seeder
         ]);
         PlacaMadre::create([
 			'marca_placa'  =>'Asrock',
+			'modelo_placa' =>'960gm-vgs3 fx',
+			'version'      =>'1.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asrock',
+			'modelo_placa' =>'960gm-vgs3 fx',
+			'version'      =>'1.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asrock',
+			'modelo_placa' =>'960gm-vgs3 fx',
+			'version'      =>'1.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asrock',
+			'modelo_placa' =>'960gm-vgs3 fx',
+			'version'      =>'1.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asrock',
+			'modelo_placa' =>'960gm-vgs3 fx',
+			'version'      =>'1.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asrock',
+			'modelo_placa' =>'B75M-PLUS',
+			'version'      =>'2.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asrock',
+			'modelo_placa' =>'B75M-PLUS',
+			'version'      =>'2.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asrock',
+			'modelo_placa' =>'B75M-PLUS',
+			'version'      =>'2.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asrock',
+			'modelo_placa' =>'B75M-PLUS',
+			'version'      =>'2.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asrock',
+			'modelo_placa' =>'B75M-PLUS',
+			'version'      =>'2.1',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Asrock',
 			'modelo_placa' =>'B75M-PLUS',
 			'version'      =>'2.1',
 			'disponible'   =>'si'
@@ -64,6 +214,66 @@ class PlacaSeeder extends Seeder
 			'marca_placa'  =>'Gigabyte',
 			'modelo_placa' =>'h81m-h',
 			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Gigabyte',
+			'modelo_placa' =>'h81m-h',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Gigabyte',
+			'modelo_placa' =>'h81m-h',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Gigabyte',
+			'modelo_placa' =>'h81m-h',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Gigabyte',
+			'modelo_placa' =>'h81m-h',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Gigabyte',
+			'modelo_placa' =>'h81m-h',
+			'version'      =>'1.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Gigabyte',
+			'modelo_placa' =>'P8H61-M',
+			'version'      =>'1.3',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Gigabyte',
+			'modelo_placa' =>'P8H61-M',
+			'version'      =>'1.3',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Gigabyte',
+			'modelo_placa' =>'P8H61-M',
+			'version'      =>'1.3',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Gigabyte',
+			'modelo_placa' =>'P8H61-M',
+			'version'      =>'1.3',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Gigabyte',
+			'modelo_placa' =>'P8H61-M',
+			'version'      =>'1.3',
 			'disponible'   =>'si'
         ]);
         PlacaMadre::create([
@@ -82,6 +292,36 @@ class PlacaSeeder extends Seeder
 			'marca_placa'  =>'MSI',
 			'modelo_placa' =>'970 gaming',
 			'version'      =>'1.2',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Intel',
+			'modelo_placa' =>'desktop board 01',
+			'version'      =>'2.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Intel',
+			'modelo_placa' =>'desktop board 01',
+			'version'      =>'2.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Intel',
+			'modelo_placa' =>'desktop board 01',
+			'version'      =>'2.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Intel',
+			'modelo_placa' =>'desktop board 01',
+			'version'      =>'2.0',
+			'disponible'   =>'si'
+        ]);
+        PlacaMadre::create([
+			'marca_placa'  =>'Intel',
+			'modelo_placa' =>'desktop board 01',
+			'version'      =>'2.0',
 			'disponible'   =>'si'
         ]);
         PlacaMadre::create([

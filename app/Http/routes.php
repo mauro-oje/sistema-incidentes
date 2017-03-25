@@ -54,7 +54,7 @@ Route::get('admin/autenticacion/logout',[
 	'as'	=>	'admin.autenticacion.logout'
 ]);
 
-Route::group(['prefix' => 'admin','middleware'=>'auth','middleware' => 'role:admin'],function(){
+Route::group(['prefix' => 'admin','middleware'=>'auth','middleware' => 'role:administrador'],function(){
 
 	//  :: RUTAS PARA LOS USUARIOS ::
 

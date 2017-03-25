@@ -24,8 +24,248 @@ class DiscoSeeder extends Seeder
 			'tipo_disco'      =>'HHD',
 			'marca_disco'     =>'Seagate',
 			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
 			'capacidad_disco' =>'1 TB',
 			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Seagate',
+			'modelo_disco'    =>'Barracuda',
+			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Western Digital',
+			'modelo_disco'    =>'Caviar BLue',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Western Digital',
+			'modelo_disco'    =>'Caviar BLue',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Western Digital',
+			'modelo_disco'    =>'Caviar BLue',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Western Digital',
+			'modelo_disco'    =>'Caviar BLue',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Western Digital',
+			'modelo_disco'    =>'Caviar BLue',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
 			'disponible'      =>'si'
         ]);
         DiscoDuro::create([
@@ -62,9 +302,89 @@ class DiscoSeeder extends Seeder
         ]);
         DiscoDuro::create([
 			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Toshiba',
+			'modelo_disco'    =>'Canvio',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Toshiba',
+			'modelo_disco'    =>'Canvio',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Toshiba',
+			'modelo_disco'    =>'Canvio',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Toshiba',
+			'modelo_disco'    =>'Canvio',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
+			'marca_disco'     =>'Toshiba',
+			'modelo_disco'    =>'Canvio',
+			'capacidad_disco' =>'500 GB',
+			'interface'       =>'SATA II',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'HHD',
 			'marca_disco'     =>'OCZ',
 			'modelo_disco'    =>'Agility 3',
 			'capacidad_disco' =>'1 TB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'SSD',
+			'marca_disco'     =>'Samsung',
+			'modelo_disco'    =>'850 evo',
+			'capacidad_disco' =>'240 GB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'SSD',
+			'marca_disco'     =>'Samsung',
+			'modelo_disco'    =>'850 evo',
+			'capacidad_disco' =>'240 GB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'SSD',
+			'marca_disco'     =>'Samsung',
+			'modelo_disco'    =>'850 evo',
+			'capacidad_disco' =>'240 GB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'SSD',
+			'marca_disco'     =>'Samsung',
+			'modelo_disco'    =>'850 evo',
+			'capacidad_disco' =>'240 GB',
+			'interface'       =>'SATA III',
+			'disponible'      =>'si'
+        ]);
+        DiscoDuro::create([
+			'tipo_disco'      =>'SSD',
+			'marca_disco'     =>'Samsung',
+			'modelo_disco'    =>'850 evo',
+			'capacidad_disco' =>'240 GB',
 			'interface'       =>'SATA III',
 			'disponible'      =>'si'
         ]);

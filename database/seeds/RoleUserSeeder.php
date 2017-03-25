@@ -13,7 +13,7 @@ class RoleUserSeeder extends Seeder
     public function run(){
 
         //$user = User::all();
-
+        /*
         $userAdmin = User::find(1); //Mariño
         $userAdmin->attachRole(1);
         $userTecnicoHS1 = User::find(2); //Mauro
@@ -24,36 +24,35 @@ class RoleUserSeeder extends Seeder
         $userMiembro->attachRole(4);
         $userMiembro2 = User::find(5); //Nico
         $userMiembro2->attachRole(4);
-        /*
         $userAdmin = User::find(1); //Bill
 		$userAdmin->attachRole(1);
-        
+        */
         $userAdmin = User::find(1); //Mariño
         $userAdmin->attachRole(1);
 
 		$userTecnicoHS1 = User::find(2); //Mauro
 		$userTecnicoHS1->attachRole(2);
 
-        $userTecnicoRI1= User::find(3); //Augusto
+        $userTecnicoRI1= User::find(3); //Walter
         $userTecnicoRI1->attachRole(3);
 
-		$userTecnicoRI2 = User::find(4); //Walter
-		$userTecnicoRI2->attachRole(3);
+		$userTecnicoRI2 = User::find(4); //Marcos 
+		$userTecnicoRI2->attachRole(4);
 
-        $userTecnicoHS2 = User::find(5); //Juan Carlos
-        $userTecnicoHS2->attachRole(2);
+        $userTecnicoHS2 = User::find(5); //Nico
+        $userTecnicoHS2->attachRole(4);
 
-		$userMiembro = User::find(6); //Marcos
-		$userMiembro->attachRole(4);
+		$userMiembro = User::find(6); //Godoy
+		$userMiembro->attachRole(1);
 
-        $userMiembro2 = User::find(7); //Nico
-        $userMiembro2->attachRole(4);
+        $userMiembro2 = User::find(7); //Rodriguez
+        $userMiembro2->attachRole(1);
 
-        $userMiembro3 = User::find(8); //Nahuel
-        $userMiembro3->attachRole(4);
+        $userMiembro3 = User::find(8); //Augusto
+        $userMiembro3->attachRole(3);
 
-        $userMiembro4 = User::find(9);
-        $userMiembro4->attachRole(4);
+        $userMiembro4 = User::find(9); //Juan Carlos
+        $userMiembro4->attachRole(2);
 
         $userMiembro5 = User::find(10);
         $userMiembro5->attachRole(4);
@@ -180,7 +179,12 @@ class RoleUserSeeder extends Seeder
 
         $userMiembro46 = User::find(50);
         $userMiembro46->attachRole(4);
-        */
+
+        $userMiembro46 = User::find(51);
+        $userMiembro46->attachRole(4);
+
+        $userMiembro46 = User::find(52);
+        $userMiembro46->attachRole(4);
         
     }
 }

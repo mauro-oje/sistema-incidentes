@@ -1,5 +1,5 @@
 @extends('admin.plantilla.principal')
-@section('Registrar incidente')
+@section('titulo','Registrar incidente')
 @section('contenido')
 <div class="row">
 	<div class="panel panel-primary">

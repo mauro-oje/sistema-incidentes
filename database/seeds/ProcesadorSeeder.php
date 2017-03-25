@@ -22,6 +22,86 @@ class ProcesadorSeeder extends Seeder
         ]);
         Procesador::create([
 			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Celeron D',
+			'capacidad_procesador' =>'1.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 775',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Celeron D',
+			'capacidad_procesador' =>'1.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 775',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Celeron D',
+			'capacidad_procesador' =>'1.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 775',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Celeron D',
+			'capacidad_procesador' =>'1.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 775',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Celeron D',
+			'capacidad_procesador' =>'1.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 775',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Pentium',
+			'capacidad_procesador' =>'3.0 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 775',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Pentium',
+			'capacidad_procesador' =>'3.0 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 775',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Pentium',
+			'capacidad_procesador' =>'3.0 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 775',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Pentium',
+			'capacidad_procesador' =>'3.0 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 775',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Pentium',
+			'capacidad_procesador' =>'3.0 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 775',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
 			'modelo_procesador'    =>'Pentium',
 			'capacidad_procesador' =>'3.0 Ghz',
 			'core_procesador'      =>'2',
@@ -34,6 +114,126 @@ class ProcesadorSeeder extends Seeder
 			'capacidad_procesador' =>'2.8 Ghz',
 			'core_procesador'      =>'2',
 			'socket_procesador'    =>'LGA 2011',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i3',
+			'capacidad_procesador' =>'2.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 2011',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i3',
+			'capacidad_procesador' =>'2.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 2011',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i3',
+			'capacidad_procesador' =>'2.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 2011',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i3',
+			'capacidad_procesador' =>'2.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 2011',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i3',
+			'capacidad_procesador' =>'2.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 2011',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i3',
+			'capacidad_procesador' =>'2.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 2011',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i3',
+			'capacidad_procesador' =>'2.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 2011',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i3',
+			'capacidad_procesador' =>'2.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 2011',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i3',
+			'capacidad_procesador' =>'2.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 2011',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i3',
+			'capacidad_procesador' =>'2.8 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 2011',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i5',
+			'capacidad_procesador' =>'2.4 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 1151',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i5',
+			'capacidad_procesador' =>'2.4 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 1151',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i5',
+			'capacidad_procesador' =>'2.4 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 1151',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i5',
+			'capacidad_procesador' =>'2.4 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 1151',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'Intel',
+			'modelo_procesador'    =>'Corei i5',
+			'capacidad_procesador' =>'2.4 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'LGA 1151',
 			'disponible'           =>'si'
         ]);
         Procesador::create([
@@ -70,6 +270,46 @@ class ProcesadorSeeder extends Seeder
         ]);
         Procesador::create([
 			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Atlon X2',
+			'capacidad_procesador' =>'2 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'AMD2',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Atlon X2',
+			'capacidad_procesador' =>'2 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'AMD2',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Atlon X2',
+			'capacidad_procesador' =>'2 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'AMD2',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Atlon X2',
+			'capacidad_procesador' =>'2 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'AMD2',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Atlon X2',
+			'capacidad_procesador' =>'2 Ghz',
+			'core_procesador'      =>'2',
+			'socket_procesador'    =>'AMD2',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
 			'modelo_procesador'    =>'Atlon X4',
 			'capacidad_procesador' =>'2.6 Ghz',
 			'core_procesador'      =>'4',
@@ -86,10 +326,90 @@ class ProcesadorSeeder extends Seeder
         ]);
         Procesador::create([
 			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Phenom X4',
+			'capacidad_procesador' =>'2.2 Ghz',
+			'core_procesador'      =>'4',
+			'socket_procesador'    =>'AMD3',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Phenom X4',
+			'capacidad_procesador' =>'2.2 Ghz',
+			'core_procesador'      =>'4',
+			'socket_procesador'    =>'AMD3',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Phenom X4',
+			'capacidad_procesador' =>'2.2 Ghz',
+			'core_procesador'      =>'4',
+			'socket_procesador'    =>'AMD3',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Phenom X4',
+			'capacidad_procesador' =>'2.2 Ghz',
+			'core_procesador'      =>'4',
+			'socket_procesador'    =>'AMD3',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Phenom X4',
+			'capacidad_procesador' =>'2.2 Ghz',
+			'core_procesador'      =>'4',
+			'socket_procesador'    =>'AMD3',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
 			'modelo_procesador'    =>'Phenom X6 Black Edition',
 			'capacidad_procesador' =>'3.4 Ghz',
 			'core_procesador'      =>'6',
 			'socket_procesador'    =>'AMD3',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Vishera Fx X8 8350',
+			'capacidad_procesador' =>'4.0 Ghz',
+			'core_procesador'      =>'8',
+			'socket_procesador'    =>'AMD3+',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Vishera Fx X8 8350',
+			'capacidad_procesador' =>'4.0 Ghz',
+			'core_procesador'      =>'8',
+			'socket_procesador'    =>'AMD3+',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Vishera Fx X8 8350',
+			'capacidad_procesador' =>'4.0 Ghz',
+			'core_procesador'      =>'8',
+			'socket_procesador'    =>'AMD3+',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Vishera Fx X8 8350',
+			'capacidad_procesador' =>'4.0 Ghz',
+			'core_procesador'      =>'8',
+			'socket_procesador'    =>'AMD3+',
+			'disponible'           =>'si'
+        ]);
+        Procesador::create([
+			'marca_procesador'     =>'AMD',
+			'modelo_procesador'    =>'Vishera Fx X8 8350',
+			'capacidad_procesador' =>'4.0 Ghz',
+			'core_procesador'      =>'8',
+			'socket_procesador'    =>'AMD3+',
 			'disponible'           =>'si'
         ]);
         Procesador::create([

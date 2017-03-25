@@ -22,7 +22,7 @@
 	$mail->From = "sgincidentes@gmail.com";
 	$mail->FromName = "sgincidentes@gmail.com";
 
-	$mail->addAddress("cromero2386@gmail.com","User 1");
+	//$mail->addAddress("cromero2386@gmail.com","User 1");
 	$mail->addAddress("mauro88_z@hotmail.com","User 2");
 
 	//$mail->addCC("user.3@ymail.com","User 3");

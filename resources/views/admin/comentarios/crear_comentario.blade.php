@@ -85,18 +85,22 @@
 			@foreach($comentarios_consulta as $comentario)
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						@if($comentario->user->tipo == "miembro")
-							<p class="pull-right"><i class="fa fa-calendar" aria-hidden="true"></i> {{$comentario->created_at}}</p> <p>{{$comentario->user->name}} {{$comentario->user->apellido}} {{"(Miembro)"}}
-							</p>
-						@elseif($comentario->user->tipo == "tecnicoHS")
-							<p class="pull-right"><i class="fa fa-calendar" aria-hidden="true"></i> {{$comentario->created_at}}</p> <p>{{$comentario->user->name}} {{$comentario->user->apellido}} {{"(Tecnico - Hardware/Software)"}}
-							</p>
-						@elseif($comentario->user->tipo == "tecnicoRI")
-							<p class="pull-right"><i class="fa fa-calendar" aria-hidden="true"></i> {{$comentario->created_at}}</p> <p>{{$comentario->user->name}} {{$comentario->user->apellido}} {{"(Tecnico - Red/Internet)"}}
-							</p>
+						@if($comentario->user)
+							@if($comentario->user->tipo == "miembro")
+								<p class="pull-right"><i class="fa fa-calendar" aria-hidden="true"></i> {{$comentario->created_at}}</p> <p>{{$comentario->user->name}} {{$comentario->user->apellido}} {{"(Miembro)"}}
+								</p>
+							@elseif($comentario->user->tipo == "tecnicoHS")
+								<p class="pull-right"><i class="fa fa-calendar" aria-hidden="true"></i> {{$comentario->created_at}}</p> <p>{{$comentario->user->name}} {{$comentario->user->apellido}} {{"(Tecnico - Hardware/Software)"}}
+								</p>
+							@elseif($comentario->user->tipo == "tecnicoRI")
+								<p class="pull-right"><i class="fa fa-calendar" aria-hidden="true"></i> {{$comentario->created_at}}</p> <p>{{$comentario->user->name}} {{$comentario->user->apellido}} {{"(Tecnico - Red/Internet)"}}
+								</p>
+							@else
+								<p class="pull-right"><i class="fa fa-calendar" aria-hidden="true"></i> {{$comentario->created_at}}</p> <p>{{$comentario->user->name}} {{$comentario->user->apellido}} {{"(Administrador)"}}
+								</p>
+							@endif
 						@else
-							<p class="pull-right"><i class="fa fa-calendar" aria-hidden="true"></i> {{$comentario->created_at}}</p> <p>{{$comentario->user->name}} {{$comentario->user->apellido}} {{"(Administrador)"}}
-							</p>
+							{{"Usuario eliminado"}}
 						@endif
 					</div>
 					<div class="panel-body">

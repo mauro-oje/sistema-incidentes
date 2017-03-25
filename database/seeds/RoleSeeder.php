@@ -15,8 +15,8 @@ class RoleSeeder extends Seeder
     public function run(){
     	
         $adminRole = Role::create([
-			'name' => 'Admin',
-			'slug' => 'admin',
+			'name' => 'Administrador',
+			'slug' => 'administrador',
 			'description' => 'Administrador de Sistema', // optional
 			'level' => 1, // optional, set to 1 by default
 		]);
