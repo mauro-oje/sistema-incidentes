@@ -10,25 +10,10 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
 Route::get('/',[
 	'uses'	=>	'AuthController@getLogin',
 	'as'	=>	'admin.autenticacion.login'
 ]);
-
-/*
-Route::group(['prefix' => '/'],function(){
-	Route::get('/',[
-	'uses'	=>	'AuthController@getLogin',
-	'as'	=>	'admin.autenticacion.login'
-]);
-
-Route::post('/',[
-	'uses'	=>	'AuthController@postLogin',
-	'as'	=>	'admin.autenticacion.loginPost'
-]);
-});
-*/
 /*
 Route::get('/', function () {
     return view('inicio');
@@ -69,7 +54,7 @@ Route::get('admin/autenticacion/logout',[
 	'as'	=>	'admin.autenticacion.logout'
 ]);
 
-Route::group(['prefix' => 'admin','middleware'=>'auth','middleware' => 'role:admin'],function(){
+Route::group(['prefix' => 'admin','middleware'=>'auth','middleware' => 'role:administrador'],function(){
 
 	//  :: RUTAS PARA LOS USUARIOS ::
 

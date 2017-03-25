@@ -82,7 +82,7 @@
 
 				$.each(x,function(k,v){
 					var nombre;
-					if (v['tipo_incidente'] === 'admin') {
+					if (v['tipo_incidente'] === 'administrador') {
 						nombre = 'Administrador';
 					} else if (v['tipo_incidente'] === 'tecnicoHS') {
 						nombre = 'Hardware/Software';
@@ -189,7 +189,7 @@
 				    },
 				    grid:{y:80},
 				    legend: {
-				        data:['Hardware/Software','Red/Internet','Consultas Generales']
+				        data:['Hardware/Software','Red/Internet','Sistema-Consulta']
 				    },
 				    toolbox: {
 				        show : true,
@@ -223,8 +223,8 @@
 				option.xAxis[0].data = x[0];
 				$.each(x[2],function(k,v){
 					var nombre_tecnico;
-					if(v == "admin"){
-						nombre_tecnico = "Consultas Generales";
+					if(v == "administrador"){
+						nombre_tecnico = "Sistema-Consulta";
 					}else if(v == "tecnicoHS"){
 						nombre_tecnico = "Hardware/Software";
 					}else{

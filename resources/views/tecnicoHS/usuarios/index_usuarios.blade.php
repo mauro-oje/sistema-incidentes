@@ -31,11 +31,11 @@
 					<td>{{$usuario->apellido}}</td>
 					<td>{{$usuario->name}}</td>
 					<td>{{$usuario->email}}</td>
-					@if($usuario->is('admin'))
+					@if($usuario->tipo == 'administrador')
 						<td><span class="label label-success">{{"Administrador"}}</span></td>
-					@elseif($usuario->is('tecnicohs'))
+					@elseif($usuario->tipo == 'tecnicoHS')
 						<td><span class="label label-primary">{{"Tecnico Hardware-Software"}}</span></td>
-					@elseif($usuario->is('tecnicori'))
+					@elseif($usuario->tipo ==  'tecnicoRI')
 						<td><span class="label label-primary">{{"Tecnico Red-Internet"}}</span></td>
 					@else
 						<td><span class="label label-default">{{"Miembro"}}</span></td>

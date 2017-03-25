@@ -62,20 +62,20 @@
             },
             "createdRow" : function(row,data,index){
                 if(data['tipo_incidente'] == 'tecnicoHS'){
-                    $('td:eq(1)',row).html('Hardware - Software');
+                    $('td:eq(3)',row).html('Hardware - Software');
                 }else if(data['tipo_incidente'] == 'tecnicoRI'){
-                    $('td:eq(1)',row).html('Red - Internet');
+                    $('td:eq(3)',row).html('Red - Internet');
                 }else if(data['tipo_incidente'] == 'administrador'){
-                    $('td:eq(1)',row).html('Sistema - Consulta');
+                    $('td:eq(3)',row).html('Sistema - Consulta');
                 }else{
-                    $('td:eq(1)',row).html('');
+                    $('td:eq(3)',row).html('');
                 }
                 if(data['estado'] == 'abierto'){
-                    $('td:eq(3)',row).html('<span class="form-control-static label label-success">Abierto</span>');
+                    $('td:eq(5)',row).html('<span class="form-control-static label label-success">Abierto</span>');
                 }else if(data['estado'] == 'cerrado'){
-                    $('td:eq(3)',row).html('<span class="form-control-static label label-danger">Cerrado</span>');
+                    $('td:eq(5)',row).html('<span class="form-control-static label label-danger">Cerrado</span>');
                 }else{
-                    $('td:eq(3)',row).html('-');
+                    $('td:eq(5)',row).html('-');
                 }
                 if(data['id'] == 0){
                     $('#contenedor_tabla').html('<h3>No hay incidentes registrados</h3>');

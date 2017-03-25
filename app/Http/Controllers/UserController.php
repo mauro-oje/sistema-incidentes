@@ -163,7 +163,7 @@ class UserController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function edit($id){
-        
+
         $usuario = User::find($id);
         $oficinas = Oficina::all();
 
@@ -179,7 +179,7 @@ class UserController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id){
-        
+       
         $usuario = User::find($id);
         $oficina = Oficina::find($request->oficina);
         
@@ -205,13 +205,9 @@ class UserController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function destroy($id){
-        
         $usuario = User::find($id);
-
         $usuario->delete();
-
         flash('El usuario '.$usuario->apellido.', '.$usuario->name.' se ha eliminado de forma correcta!','danger');
-
         return redirect()->route('usuario.listar');
 
     }

@@ -90,11 +90,12 @@ class IncidenteController extends Controller{
             $mail->Body = "Prioridad: ".$incidente->prioridad."<br/> "."Descripción:".$incidente->descripcion_incidente;
             //dd($mail);
             
+            /*
             if(!$mail->Send())
                 echo "El mensaje no fue enviado <br />PHPMailer Error: " . $mail->ErrorInfo; // "Message was not sent <br />PHPMailer Error: "
             else
                 echo "El mensaje ha sido enviado con exítos!"; // "Message has been sent"
-            
+            */
             flash('Incidente registrado correctamente!','success');
         
         if(Auth::user()->tipo == "miembro"){

@@ -27,6 +27,111 @@ class MemoriaSeeder extends Seeder
 			'disponible'        =>'si'
         ]);
         MemoriaRam::create([
+			'tipo_memoria'      =>'DDR2',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'1 GB',
+			'frecuencia'        =>'667MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR2',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'1 GB',
+			'frecuencia'        =>'667MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR2',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'1 GB',
+			'frecuencia'        =>'667MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR2',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'1 GB',
+			'frecuencia'        =>'667MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR2',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'1 GB',
+			'frecuencia'        =>'667MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'2 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'2 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'2 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'2 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'2 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'2 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'2 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'2 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'2 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'2 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
 			'tipo_memoria'      =>'DDR3',
 			'marca_memoria'     =>'Kingston',
 			'capacidad_memoria' =>'2 GB',
@@ -44,6 +149,146 @@ class MemoriaSeeder extends Seeder
 			'tipo_memoria'      =>'DDR3',
 			'marca_memoria'     =>'Novatech',
 			'capacidad_memoria' =>'2 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR3',
+			'marca_memoria'     =>'Kingston',
+			'capacidad_memoria' =>'4 GB',
 			'frecuencia'        =>'1333MHz',
 			'disponible'        =>'si'
         ]);
@@ -111,6 +356,41 @@ class MemoriaSeeder extends Seeder
 			'disponible'        =>'si'
         ]);
 		MemoriaRam::create([
+			'tipo_memoria'      =>'DDR4',
+			'marca_memoria'     =>'Corsair',
+			'capacidad_memoria' =>'8 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR4',
+			'marca_memoria'     =>'Corsair',
+			'capacidad_memoria' =>'8 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR4',
+			'marca_memoria'     =>'Corsair',
+			'capacidad_memoria' =>'8 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR4',
+			'marca_memoria'     =>'Corsair',
+			'capacidad_memoria' =>'8 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
+			'tipo_memoria'      =>'DDR4',
+			'marca_memoria'     =>'Corsair',
+			'capacidad_memoria' =>'8 GB',
+			'frecuencia'        =>'1333MHz',
+			'disponible'        =>'si'
+        ]);
+        MemoriaRam::create([
 			'tipo_memoria'      =>'DDR4',
 			'marca_memoria'     =>'Corsair',
 			'capacidad_memoria' =>'8 GB',

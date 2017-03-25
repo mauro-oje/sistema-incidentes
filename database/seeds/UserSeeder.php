@@ -22,13 +22,11 @@ class UserSeeder extends Seeder{
             'oficina_id' =>12
         ]);
         */
-
-        
         User::create([
             'username'   =>'smarino',
             'tipo'       =>'administrador',
             'name'       =>'Sonia',
-            'apellido'   =>'Mariño',
+            'apellido'   =>'Marinio',
             'email'      =>'smarino@abc.com',
             'password'   =>bcrypt('123'),
             'oficina_id' =>12
@@ -69,11 +67,10 @@ class UserSeeder extends Seeder{
             'password'   =>bcrypt('123'),
             'oficina_id' =>1
         ]);
-        /*
         User::create([
             'username'   =>'mgodoy',
-            'tipo'       =>'admin',
-            'name'       =>'María',
+            'tipo'       =>'administrador',
+            'name'       =>'Maria',
             'apellido'   =>'Godoy',
             'email'      =>'mgodoy@abc.com',
             'password'   =>bcrypt('123'),
@@ -81,19 +78,10 @@ class UserSeeder extends Seeder{
         ]);
         User::create([
             'username'   =>'yrodriguez',
-            'tipo'       =>'admin',
+            'tipo'       =>'administrador',
             'name'       =>'Yolanda',
             'apellido'   =>'Rodriguez',
             'email'      =>'yrodriguez@abc.com',
-            'password'   =>bcrypt('123'),
-            'oficina_id' =>12
-        ]);
-        User::create([
-            'username'   =>'mojeda',
-            'tipo'       =>'tecnicoHS',
-            'name'       =>'Mauro',
-            'apellido'   =>'Ojeda',
-            'email'      =>'mojeda@abc.com',
             'password'   =>bcrypt('123'),
             'oficina_id' =>12
         ]);
@@ -107,15 +95,6 @@ class UserSeeder extends Seeder{
             'oficina_id' =>12
         ]);
         User::create([
-            'username'   =>'wpinto',
-            'tipo'       =>'tecnicoRI',
-            'name'       =>'Walter',
-            'apellido'   =>'Pinto',
-            'email'      =>'wpinto@abc.com',
-            'password'   =>bcrypt('123'),
-            'oficina_id' =>12
-        ]);
-        User::create([
             'username'   =>'jcmorales',
             'tipo'       =>'tecnicoHS',
             'name'       =>'Juan Carlos',
@@ -123,25 +102,6 @@ class UserSeeder extends Seeder{
             'email'      =>'jcmorales@abc.com',
             'password'   =>bcrypt('123'),
             'oficina_id' =>12
-        ]);
-
-        User::create([
-            'username'   =>'mperucca',
-            'tipo'       =>'miembro',
-            'name'       =>'Marcos',
-            'apellido'   =>'Perucca',
-            'email'      =>'mperucca@abc.com',
-            'password'   =>bcrypt('123'),
-            'oficina_id' =>1
-        ]);
-        User::create([
-            'username'   =>'nzaracho',
-            'tipo'       =>'miembro',
-            'name'       =>'Nicolas',
-            'apellido'   =>'Zaracho',
-            'email'      =>'nzaracho@abc.com',
-            'password'   =>bcrypt('123'),
-            'oficina_id' =>1
         ]);
         User::create([
             'username'   =>'nsoto',
@@ -535,6 +495,6 @@ class UserSeeder extends Seeder{
             'password'   =>bcrypt('123'),
             'oficina_id' =>22
         ]);
-        */
+    
     }
 }
