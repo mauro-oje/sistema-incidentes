@@ -39,7 +39,8 @@
  
     $(document).ready(function() {
         var table = $('#tabla_tecnico').DataTable( {
-            "ajax": "http://localhost/Laravel/SistemaIncidentes/public/incidente/tabla-tecnico-ajax",
+            //"ajax": "http://localhost/Laravel/SistemaIncidentes/public/incidente/tabla-tecnico-ajax",
+            "ajax": "{{route('incidente.listadoTecnico.ajax')}}",
             "destroy":true,
             "columns": [
                 { "data": "id" },
@@ -110,7 +111,8 @@
             var data = table.row($(this).parents("tr")).data();
             var id = data.id;
             //console.log(id);
-            var route = "http://localhost/Laravel/SistemaIncidentes/public/incidente/"+id+"/cometarios";
+            //var route = "http://localhost/Laravel/SistemaIncidentes/public/incidente/"+id+"/cometarios";
+            var route = "{{url('incidente')}}"+"/"+id+"/cometarios";
             //$.get(route);
             window.location.href = route;
         });
@@ -121,7 +123,8 @@
             var data = table.row($(this).parents("tr")).data();
             var id = data.id;
             //console.log(id);
-            var route2 = "http://localhost/Laravel/SistemaIncidentes/public/incidente/"+id+"/generar-pdf-detalle";
+            //var route2 = "http://localhost/Laravel/SistemaIncidentes/public/incidente/"+id+"/generar-pdf-detalle";
+            var route2 = "{{url('incidente')}}"+"/"+id+"/generar-pdf-detalle";
             //$.get(route);
             window.location.href = route2;
         });

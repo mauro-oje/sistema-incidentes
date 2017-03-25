@@ -45,7 +45,8 @@
             //"processing":true,
             //"serverSide": true,
             "ajax": {
-                "url":"http://localhost/Laravel/SistemaIncidentes/public/incidente/tabla-miembro-ajax",
+                //"url":"http://localhost/Laravel/SistemaIncidentes/public/incidente/tabla-miembro-ajax",
+                "url":"{{url('incidente/tabla-miembro-ajax')}}",
                 "type": "GET",
                 //"method": "GET",
                 "dataType":"JSON"
@@ -116,7 +117,8 @@
             var data = table.row($(this).parents("tr")).data();
             var id = data.id;
             //console.log(id);
-            var route = "http://localhost/Laravel/SistemaIncidentes/public/incidente/"+id+"/cometarios";
+            //var route = "http://localhost/Laravel/SistemaIncidentes/public/incidente/"+id+"/cometarios";
+            var route = "{{url('incidente')}}"+"/"+id+"/cometarios";
             //$.get(route);
             window.location.href = route;
         });
