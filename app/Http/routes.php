@@ -21,7 +21,9 @@ Route::get('inicio', function () {
 Route::get('home', function () {
     return view('inicio');
 });
-
+Route::get('public/home', function () {
+    return view('inicio');
+});
 
 //Route::get('mail'); ,'middleware' => 'role:admin'
 
