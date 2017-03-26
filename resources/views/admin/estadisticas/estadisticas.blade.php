@@ -13,7 +13,7 @@
 		require.config({
 			paths:{
 				//echarts: '/Laravel/SistemaIncidentes/public/plugins/bootstrap/js'
-				echarts: '/public/plugins/bootstrap/js'
+				echarts: '/sistema-incidentes/public/plugins/bootstrap/js'
 				//echarts: '/plugins/bootstrap/js'
 			}
 		});
