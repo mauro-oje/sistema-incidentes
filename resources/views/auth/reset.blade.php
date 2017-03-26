@@ -150,19 +150,19 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2 style="text-aling:center">Nuestro equipo</h2>
+          <p>Nuestro grupo humano tiene como objetivo brindarle soluciones rápidas, profesionales y eficientes.</p>
+          <p>Mediante especialistas altamente calificados le damos un trato cordial y personalizado, lo cual nos distingue en el mercado.</p>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>Incidentes</h2>
+          <p>Llevamos adelante la registración de todos y cada uno de los incidentes de tu empresa. 
+          <p>Es normal que un cliente tenga distintos tipos de inconveniente con su ordenador, este sistema te permitirá registrar dichos inconveniente y notificar a las personas calificada para poder solucionar todos tus problemas relacionados con el área infomática.</p>
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>Soporte</h2>
+          <p>Te brindamos soporte y mantenimiento con los mejores profesionales y técnicos en el área de sistemas.</p>
+          <p>Registramos todos los activos de los usuarios registrados en el sistemas y asi poder indetificar de manera inmediata cualquier tipo de inconveniente de los mismos.</p>
         </div>
       </div>
 

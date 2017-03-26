@@ -14,11 +14,14 @@ Route::get('/',[
 	'uses'	=>	'AuthController@getLogin',
 	'as'	=>	'admin.autenticacion.login'
 ]);
-/*
-Route::get('/', function () {
+
+Route::get('inicio', function () {
     return view('inicio');
 });
-*/
+Route::get('home', function () {
+    return view('inicio');
+});
+
 
 //Route::get('mail'); ,'middleware' => 'role:admin'
 
