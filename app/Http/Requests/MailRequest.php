@@ -25,7 +25,7 @@ class MailRequest extends Request
     {
         return [
             'nombre'  =>  'required|min:3|max:20',
-            'email'   =>  'required|min:3|max:20',
+            'email'   =>  'required|min:3',
             'mensaje' =>  'required'
         ];
     }
