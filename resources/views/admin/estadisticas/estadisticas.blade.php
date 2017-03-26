@@ -14,6 +14,7 @@
 			paths:{
 				//echarts: '/Laravel/SistemaIncidentes/public/plugins/bootstrap/js'
 				echarts: '/public/plugins/bootstrap/js'
+				//echarts: '/plugins/bootstrap/js'
 			}
 		});
 
