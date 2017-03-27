@@ -129,7 +129,7 @@
 				</div>
 			<div class="form-group">
 				<div class="col-sm-2 col-sm-offset-2">
-					@if(Auth::user()->tipo == "admin")
+					@if(Auth::user()->tipo == "administrador")
 						<a href="{{route('usuario.listar')}}" class="btn btn-sm btn-primary"><i class="fa fa-reply" aria-hidden="true"></i> Volver</a>
 					@elseif(Auth::user()->tipo == "tecnicoHS")
 						<a href="{{route('usuario.listar.tecnicohs')}}" class="btn btn-sm btn-primary"><i class="fa fa-reply" aria-hidden="true"></i> Volver</a>
