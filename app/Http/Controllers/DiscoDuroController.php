@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Requests\DiscoDuroRequest;
 use App\Http\Controllers\Controller;
 use App\DiscoDuro;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class DiscoDuroController extends Controller{
     /**
@@ -113,5 +114,11 @@ class DiscoDuroController extends Controller{
         flash('El disco " '.$disco->marca_disco.' '.$disco->modelo_disco.' de '.$disco->capacidad_disco.' " se ha eliminado de forma correcta!','danger');
 
         return redirect()->route('disco.duro.index');
+    }
+
+    public function pdfDisco(){
+        $discos = DiscoDuro::all();
+        $pdf = PDF::loadView('admin/PDF/pdf_discos',['discos' => $discos]);
+        return $pdf->download('listado_discos.pdf');
     }
 }

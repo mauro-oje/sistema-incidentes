@@ -9,6 +9,7 @@ use App\Http\Requests\PlacaMadreRequest;
 use App\Http\Controllers\Controller;
 use App\Area;
 use App\PlacaMadre;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class PlacaMadreController extends Controller{
     /**
@@ -139,6 +140,12 @@ class PlacaMadreController extends Controller{
         flash('La Motherboard " '.$placa->marca_placa.' - '.$placa->modelo_placa.' "ha sido eliminado correctamente!','danger');
 
         return redirect()->route('placa.madre.index');
+    }
+
+    public function pdfPlaca(){
+        $placas_madres = PlacaMadre::all();
+        $pdf = PDF::loadView('admin/PDF/pdf_placas',['placas_madres' => $placas_madres]);
+        return $pdf->download('listado_placas.pdf');
     }
 
 }

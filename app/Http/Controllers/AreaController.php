@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Requests\AreaRequest;
 use App\Http\Controllers\Controller;
 use App\Area;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class AreaController extends Controller{
     /**
@@ -110,5 +111,11 @@ class AreaController extends Controller{
 
         return redirect()->route('area.index');
 
+    }
+
+    public function pdfArea(){
+        $areas = Area::all();
+        $pdf = PDF::loadView('admin/PDF/pdf_areas',['areas' => $areas]);
+        return $pdf->download('listado_areas.pdf');
     }
 }

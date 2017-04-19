@@ -30,7 +30,7 @@
 					<div class="col-xs-8">
 						{!! form::select('marca_disco',['Seagate'=>'Seagate','Western Digital'=>'Western Digital','Hitachi'=>'Hitachi',
 												  'Samsung '=>'Samsung ','Toshiba'=>'Toshiba','Corsair'=>'Corsair','OCZ'=>'OCZ',
-												  'Dell'=>'Dell'],
+												  'Dell'=>'Dell','Otro'=>'Otro'],
 												  null, 
 												  ['class'=>'form-control','placeholder'=>'Seleccione marca...']) 
 						!!}
@@ -51,7 +51,7 @@
 					{!! form::label('capacidad_disco','Capacidad:',['class'=>'col-xs-2 control-label']) !!}
 					<div class="col-xs-8">
 						{!! form::select('capacidad_disco',['1 TB'=>'1 TB','80 GB'=>'80 GB','160 GB'=>'160 GB',
-														'200 GB'=>'200 GB','500 GB'=>'500 GB','768 GB'=>'768 GB'],
+														'200 GB'=>'200 GB','500 GB'=>'500 GB','768 GB'=>'768 GB','Otro'=>'Otro'],
 													null, 
 													['class'=>'form-control','placeholder'=>'Seleccione la capacidad...']) 
 						!!}
@@ -64,7 +64,7 @@
 				<div class="form-group @if($errors->has('interface')) has-error @endif">
 					{!! form::label('interface','Interface:',['class'=>'col-xs-2 control-label']) !!}
 					<div class="col-xs-8">
-						{!! form::select('interface',['SATA'=>'SATA','SATA II'=>'SATA II','SATA III'=>'SATA III','IDE'=>'IDE'],
+						{!! form::select('interface',['SATA'=>'SATA','SATA II'=>'SATA II','SATA III'=>'SATA III','IDE'=>'IDE','Otro'=>'Otro'],
 													null, 
 													['class'=>'form-control','placeholder'=>'Seleccione la capacidad...']) 
 						!!}

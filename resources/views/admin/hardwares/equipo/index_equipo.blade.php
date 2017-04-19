@@ -2,7 +2,7 @@
 @section('titulo','Listado de Equipos')
 @section('contenido')
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de Equipos</h2>
-	<a href="{{route('equipo.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar Equipo</a>
+	<a href="{{route('equipo.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar Equipo</a> <a href="{{route('equipo.generar-pdf')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i></a>
 	{!! Form::open (['route'=>'equipo.index', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
         <div class="form-group">
             {!! form::text('nombre_equipo', null, ['class'=>'form-control', 'placeholder'=>'Buscar equipo (Ej:PC-001)...', 'aria-describedby'=>'search']) !!}

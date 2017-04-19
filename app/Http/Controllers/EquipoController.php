@@ -16,6 +16,7 @@ use App\Impresora;
 use App\Ip;
 use App\Fuente;
 use App\Procesador;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class EquipoController extends Controller{
     /**
@@ -292,5 +293,11 @@ class EquipoController extends Controller{
         flash('El equipo "'.$equipo->nombre_equipo.' " se ha eliminado de forma correcta!','danger');
 
         return redirect()->route('equipo.index');
+    }
+
+    public function pdfEquipo(){
+        $equipos = Equipo::all();
+        $pdf = PDF::loadView('admin/PDF/pdf_Equipos',['equipos' => $equipos]);
+        return $pdf->download('listado_equipos.pdf');
     }
 }

@@ -10,6 +10,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use App\Impresora;
 use App\Ip;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class ImpresoraController extends Controller{
     /**
@@ -180,5 +181,10 @@ class ImpresoraController extends Controller{
 
         return redirect()->route('impresora.index');
 
+    }
+    public function pdfImpresora(){
+        $impresoras = Impresora::all();
+        $pdf = PDF::loadView('admin/PDF/pdf_impresoras',['impresoras' => $impresoras]);
+        return $pdf->download('listado_impresoras.pdf');
     }
 }

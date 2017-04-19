@@ -9,6 +9,7 @@ use App\Http\Requests\OficinaRequest;
 use App\Http\Controllers\Controller;
 use App\Oficina;
 use App\Area;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class OficinaController extends Controller{
     /**
@@ -126,5 +127,11 @@ class OficinaController extends Controller{
 
         return redirect()->route('oficina.index');
 
+    }
+
+    public function pdfOficina(){
+        $oficinas = Oficina::all();
+        $pdf = PDF::loadView('admin/PDF/pdf_oficinas',['oficinas' => $oficinas]);
+        return $pdf->download('listado_oficinas.pdf');
     }
 }

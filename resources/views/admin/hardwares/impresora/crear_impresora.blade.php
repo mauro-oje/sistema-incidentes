@@ -21,7 +21,7 @@
 					{!! form::label('marca_impresora','Marca:',['class'=>'col-xs-2 control-label']) !!}
 					<div class="col-xs-8">
 						{!! form::select('marca_impresora',['Epson'=>'Epson','Samsung'=>'Samsung','HP'=>'HP','Kyocera'=>'Kyocera',
-															'Kanon'=>'Kanon','Lexmark'    =>'Lexmark'],
+															'Kanon'=>'Kanon','Lexmark'=>'Lexmark','Otro'=>'Otro'],
 													    	null, 
 													    	['class'=>'form-control','placeholder'=>'Seleccione marca...']) 
 						!!}
@@ -44,8 +44,8 @@
 				<div class="form-group @if($errors->has('tipo_impresora')) has-error @endif">
 					{!! form::label('tipo_impresora','Tipo:',['class'=>'col-xs-2 control-label']) !!}
 					<div class="col-xs-8">
-						{!! form::select('tipo_impresora',['Toner'=>'Toner','Toner a color'=>'Toner a color','Tinta'=>'Tinta',
-														'Tinta a color'=>'Tinta a color','Inyección a tinta'=>'Inyección a tinta'],
+						{!! form::select('tipo_impresora',['Toner Blanco y Negro'=>'Toner Blanco y Negro','Toner a color'=>'Toner a color','Tinta Blanco y Negro'=>'Tinta Blanco y Negro',
+														'Tinta a color'=>'Tinta a color','Inyección a tinta'=>'Inyección a tinta','Otro'=>'Otro'],
 														null, 
 														['class'=>'form-control','placeholder'=>'Seleccione capacidad...']) 
 						!!}

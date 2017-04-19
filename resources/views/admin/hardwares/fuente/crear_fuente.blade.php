@@ -21,7 +21,7 @@
 					{!! form::label('marca_fuente','Marca:',['class'=>'col-xs-2 control-label']) !!}
 					<div class="col-xs-8">
 						{!! form::select('marca_fuente',['Corsair'=>'Corsair','Kanji'=>'Kanji','Sentey'=>'Sentey','PowerColor'=>'PowerColor',
-														'Thermaltake'=>'Thermaltake','OCZ'=>'OCZ','Generico'=>'Generico'],
+														'Thermaltake'=>'Thermaltake','OCZ'=>'OCZ','Generico'=>'Generico','Otro'=>'Otro'],
 														null, 
 														['class'=>'form-control','placeholder'=>'Seleccione marca...']) 
 						!!}
@@ -46,7 +46,7 @@
 					<div class="col-xs-8">
 						{!! form::select('capacidad_fuente',['450 Watts'=>'450 Watts','500 Watts'=>'500 Watts','550 Watts'=>'550 Watts',
 														  '600 Watts'=>'600 Watts','650 Watts'=>'650 Watts','700 Watts'=>'700 Watts',
-														  '750 Watts'=>'750 Watts','800 Watts'=>'800 Watts'],
+														  '750 Watts'=>'750 Watts','800 Watts'=>'800 Watts','Otro'=>'Otro'],
 													    null, 
 													    ['class'=>'form-control','placeholder'=>'Seleccione capacidad...']) 
 						!!}

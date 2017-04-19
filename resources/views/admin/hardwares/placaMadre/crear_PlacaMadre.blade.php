@@ -17,7 +17,7 @@
 					{!! form::label('marca_placa','Marca:',['class'=>'col-xs-2 control-label']) !!}
 					<div class="col-xs-8">
 						{!! form::select('marca_placa',['Asus'=>'Asus','Asrock'=>'Asrock','Gigabyte'=>'Gigabyte','MSI'=>'MSI',
-														'Intel'=>'Intel','PC Chips'=>'PC Chips','Zotac'=>'Zotac'], 
+														'Intel'=>'Intel','PC Chips'=>'PC Chips','Zotac'=>'Zotac','Otro'=>'Otro'], 
 														null, 
 														['class'=>'form-control','placeholder'=>'Seleccione marca..']) 
 						!!}
@@ -38,7 +38,7 @@
 					{!! form::label('version','Version (REV):',['class'=>'col-xs-2 control-label']) !!}
 					<div class="col-xs-8">
 						{!! form::select('version',['1'=>'1','1.0'=>'1.0','1.2'=>'1.2','2.0'=>'2.0',
-														'2.1'=>'2.1','2.2'=>'2.2','2.3'=>'2.3'], 
+														'2.1'=>'2.1','2.2'=>'2.2','2.3'=>'2.3','Otro'=>'Otro'], 
 														null, 
 														['class'=>'form-control','placeholder'=>'Seleccione versión..']) 
 						!!}

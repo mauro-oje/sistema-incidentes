@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Requests\ProcesadorRequest;
 use App\Http\Controllers\Controller;
 use App\Procesador;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class ProcesadorController extends Controller{
     /**
@@ -126,5 +127,11 @@ class ProcesadorController extends Controller{
             $proc =  array('LGA 2011'=>'LGA 2011','LGA 1150'=>'LGA 1150' );
         }
         return Response::json($proc);
+    }
+
+    public function pdfProcesador(){
+        $procesadores = Procesador::all();
+        $pdf = PDF::loadView('admin/PDF/pdf_procesadores',['procesadores' => $procesadores]);
+        return $pdf->download('listado_procesadores.pdf');
     }
 }

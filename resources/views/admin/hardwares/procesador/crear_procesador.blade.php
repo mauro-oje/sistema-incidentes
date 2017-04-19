@@ -16,7 +16,7 @@
 				<div class="form-group @if($errors->has('marca_procesador')) has-error @endif">
 					{!! form::label('marca_procesador','Marca:',['class'=>'col-xs-2 control-label']) !!}
 					<div class="col-xs-8">
-						{!! form::select('marca_procesador',['AMD'=>'AMD','Intel'=>'Intel'], 
+						{!! form::select('marca_procesador',['AMD'=>'AMD','Intel'=>'Intel','Otro'=>'Otro'], 
 														null, 
 														['class'=>'form-control',
 														'placeholder'=>'Seleccione marca..']) 
@@ -39,7 +39,7 @@
 					<div class="col-xs-8">
 						{!! form::select('capacidad_procesador',['1 Ghz'=>'1 Ghz','1.6 Ghz'=>'1.6 Ghz',
 															'1.8 Ghz'=>'1.8 Ghz','1.9,Ghz'=>'1.9 Ghz','2.0 Ghz'=>'2.0 Ghz',
-															'2.2 Ghz'=>'2.2 Ghz','2.5 Ghz'=>'2.5 Ghz','3 Ghz'=>'3 Ghz','3.2 Ghz'=>'3.2 Ghz','3.4 Ghz'=>'3.4 Ghz'], 
+															'2.2 Ghz'=>'2.2 Ghz','2.5 Ghz'=>'2.5 Ghz','3 Ghz'=>'3 Ghz','3.2 Ghz'=>'3.2 Ghz','3.4 Ghz'=>'3.4 Ghz','Otro'=>'Otro'], 
 															null, 
 															['class'=>'form-control','placeholder'=>'Seleccione capacidad...']) 
 						!!}
@@ -49,7 +49,7 @@
 				<div class="form-group">
 					{!! form::label('core_procesador','Cantidad de core:',['class'=>'col-xs-2 control-label']) !!}
 					<div class="col-xs-8">
-						{!! form::select('core_procesador',['1'=>'1','2'=>'2','3'=>'3','4'=>'4','6'=>'6','8'=>'8'], 
+						{!! form::select('core_procesador',['1'=>'1','2'=>'2','3'=>'3','4'=>'4','6'=>'6','8'=>'8','Otro'=>'Otro'], 
 										null, 
 										['class'=>'form-control','placeholder'=>'Ingrese cantidad de core..']) 
 						!!}
@@ -62,7 +62,7 @@
 						{!! form::select('socket_procesador',['AM2'=>'AM2','AM2+'=>'AM2+','AM3'=>'AM3','AM3+'=>'AM3+',
 														'FM2'=>'FM2','FM2+'=>'FM2+','LGA 775'=>'LGA 775','LGA 2011'=>'LGA 2011',
 														'LGA 1150 & 1155'=>'LGA 1150 & 1155','LGA 2011-V3'=>'LGA 2011-V3',
-														'LGA 1151'=>'LGA 1151'],
+														'LGA 1151'=>'LGA 1151','Otro'=>'Otro'],
 														null, 
 														['class'=>'form-control','placeholder'=>'Ingrese socket..']) 
 						!!}

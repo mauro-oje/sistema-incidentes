@@ -23,7 +23,8 @@
 						{!! form::select('tipo_memoria',['DDR1'=>'DDR1',
 														'DDR2'=>'DDR2',
 														'DDR3'=>'DDR3',
-														'DDR4'=>'DDR4'],
+														'DDR4'=>'DDR4',
+														'Otro'=>'Otro'],
 												null, 
 												['class'=>'form-control','placeholder'=>'Seleccione tipo memoria...'])
 						!!}
@@ -43,7 +44,8 @@
 														'Novatech'=>'Novatech',
 														'Samsung'=>'Samsung',
 														'OCZ'=>'OCZ',
-														'AVANT Titan memory'=>'AVANT Titan memory'],
+														'AVANT Titan memory'=>'AVANT Titan memory',
+														'Otro'=>'Otro'],
 														null, 
 														['class'=>'form-control','placeholder'=>'Seleccione marca...']) 
 						!!}
@@ -61,7 +63,8 @@
 															'4 GB'=>'4 GB',
 															'8 GB'=>'8 GB',
 															'256 MB'=>'256 MB',
-															'512 MB'=>'512 MB'],
+															'512 MB'=>'512 MB',
+															'Otro'=>'Otro'],
 													null, 
 													['class'=>'form-control','placeholder'=>'Seleccione capacidad...']) 
 						!!}
@@ -80,7 +83,8 @@
 													   	'1066-MHz'=>'1066-MHz',
 													   	'1600-MHz'=>'1600-MHz',
 													   	'2133-MHz'=>'2133-MHz',
-													   	'2400-MHz'=>'2400-MHz'],
+													   	'2400-MHz'=>'2400-MHz',
+													   	'Otro'=>'Otro'],
 													    null, 
 													    ['class'=>'form-control','placeholder'=>'Seleccione frecuencia...']) 
 						!!}

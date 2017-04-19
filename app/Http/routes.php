@@ -116,6 +116,10 @@ Route::group(['prefix' => 'admin','middleware'=>'auth','middleware' => 'role:adm
 		'uses'	=>	'OficinaController@destroy',
 		'as'	=>	'oficina.borrar'
 	]);
+	Route::get('area/generar-pdf-oficinas',[
+		'uses'	=>	'OficinaController@pdfOficina',
+		'as'	=>	'oficina.generar-pdf'
+	]);
 
 	Route::resource('oficina_crud','OficinaController');
 
@@ -135,6 +139,11 @@ Route::group(['prefix' => 'admin','middleware'=>'auth','middleware' => 'role:adm
 	Route::get('area/{id}/borrar-area',[
 		'uses'	=>	'AreaController@destroy',
 		'as'	=>	'area.borrar'
+	]);
+
+	Route::get('area/generar-pdf-areas',[
+		'uses'	=>	'AreaController@pdfArea',
+		'as'	=>	'area.generar-pdf'
 	]);
 
 	Route::resource('area_crud','AreaController');
@@ -168,6 +177,10 @@ Route::group(['prefix' => 'admin','middleware'=>'auth','middleware' => 'role:adm
 		'uses'	=>	'ProcesadorController@procElegir',
 		'as'	=>	'elejir.procesador'
 	]);
+	Route::get('procesador/generar-pdf-procesadores',[
+		'uses'	=>	'ProcesadorController@pdfProcesador',
+		'as'	=>	'procesador.generar-pdf'
+	]);
 
 		//  :: RUTAS PARA LAS PLACAS MADRES ::
 
@@ -189,6 +202,11 @@ Route::group(['prefix' => 'admin','middleware'=>'auth','middleware' => 'role:adm
 	Route::get('placa-madre/{id}/borrar-memoria-ram',[
 		'uses'	=>	'PlacaMadreController@destroy',
 		'as'	=>	'placa.madre.borrar'
+	]);
+
+	Route::get('placa-madre/generar-pdf-memorias',[
+		'uses'	=>	'PlacaMadreController@pdfPlaca',
+		'as'	=>	'placa.madre.generar-pdf'
 	]);
 
 	/* MODALES
@@ -227,6 +245,11 @@ Route::group(['prefix' => 'admin','middleware'=>'auth','middleware' => 'role:adm
 		'uses'	=>	'MemoriaRamController@destroy',
 		'as'	=>	'memoria.ram.borrar'
 	]);
+
+	Route::get('memoria-ram/generar-pdf-memorias',[
+		'uses'	=>	'MemoriaRamController@pdfMemoria',
+		'as'	=>	'memoria.generar-pdf'
+	]);
 	Route::resource('memoria_ram_crud','MemoriaRamController');
 
 
@@ -243,6 +266,10 @@ Route::group(['prefix' => 'admin','middleware'=>'auth','middleware' => 'role:adm
 	Route::get('disco-duro/{id}/borrar-disco-duro',[
 		'uses'	=>	'DiscoDuroController@destroy',
 		'as'	=>	'disco.duro.borrar'
+	]);
+	Route::get('disco-duro/generar-pdf-discos',[
+		'uses'	=>	'DiscoDuroController@pdfDisco',
+		'as'	=>	'disco.duro.generar-pdf'
 	]);
 	Route::resource('disco-duro_crud','DiscoDuroController');
 
@@ -261,6 +288,10 @@ Route::group(['prefix' => 'admin','middleware'=>'auth','middleware' => 'role:adm
 		'uses'	=>	'FuenteController@destroy',
 		'as'	=>	'fuente.borrar'
 	]);
+	Route::get('fuente/generar-pdf-fuentes',[
+		'uses'	=>	'FuenteController@pdfFuente',
+		'as'	=>	'fuente.generar-pdf'
+	]);
 	Route::resource('fuente_crud','FuenteController');
 
 
@@ -277,6 +308,10 @@ Route::group(['prefix' => 'admin','middleware'=>'auth','middleware' => 'role:adm
 	Route::get('impresora/{id}/borrar-impresora',[
 		'uses'	=>	'ImpresoraController@destroy',
 		'as'	=>	'impresora.borrar'
+	]);
+	Route::get('impresora/generar-pdf-impresoras',[
+		'uses'	=>	'ImpresoraController@pdfImpresora',
+		'as'	=>	'impresora.generar-pdf'
 	]);
 	Route::resource('impresora_crud','ImpresoraController');
 
@@ -303,6 +338,12 @@ Route::group(['prefix' => 'admin','middleware'=>'auth','middleware' => 'role:adm
 		'uses'	=>	'EquipoController@store',
 		'as'	=>	'equipo.crearPost'
 	]);
+
+	Route::get('equipo/generar-pdf-equipos',[
+		'uses'	=>	'EquipoController@pdfEquipo',
+		'as'	=>	'equipo.generar-pdf'
+	]);
+
 	Route::resource('equipo_crud','EquipoController');
 
 });

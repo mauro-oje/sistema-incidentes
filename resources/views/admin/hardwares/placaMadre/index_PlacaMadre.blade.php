@@ -2,7 +2,7 @@
 @section('titulo','Listado de Placas madres')
 @section('contenido')
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de Placas madres</h2>
-	<a href="{{route('placa.madre.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar placa</a>
+	<a href="{{route('placa.madre.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar placa</a> <a href="{{route('placa.madre.generar-pdf')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i></a>
 	<!-- Formulario para el buscador de Tags-->
     {!! Form::open (['route'=>'placa.madre.index', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
         <div class="form-group">

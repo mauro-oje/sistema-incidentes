@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Requests\MemoriaRamRequest;
 use App\Http\Controllers\Controller;
 use App\MemoriaRam;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class MemoriaRamController extends Controller{
     /**
@@ -114,5 +115,11 @@ class MemoriaRamController extends Controller{
         flash('La memoria " '.$memoria->marca_memoria.' - '.$memoria->tipo_memoria.' " ha sido eliminada de forma satisfactoria!','danger');
 
         return redirect()->route('memoria.ram.index');
+    }
+
+    public function pdfMemoria(){
+        $memorias = MemoriaRam::all();
+        $pdf = PDF::loadView('admin/PDF/pdf_memorias',['memorias' => $memorias]);
+        return $pdf->download('listado_memorias.pdf');
     }
 }

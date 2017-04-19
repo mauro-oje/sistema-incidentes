@@ -2,7 +2,7 @@
 @section('titulo','Listado de Procesadores')
 @section('contenido')
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de Procesadores</h2>
-	<a href="{{route('procesador.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar procesador</a>
+	<a href="{{route('procesador.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar procesador</a> <a href="{{route('procesador.generar-pdf')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i></a>
 	<!-- Formulario para el buscador de Tags-->
     {!! Form::open (['route'=>'procesador.index', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
         <div class="form-group">

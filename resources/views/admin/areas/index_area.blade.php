@@ -2,7 +2,7 @@
 @section('titulo','Listado de Área')
 @section('contenido')
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de áreas</h2>
-	<a href="{{route('area.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar Área</a>
+	<a href="{{route('area.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar Área</a> <a href="{{route('area.generar-pdf')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i></a>
 	<hr>
 	<!--Incluyo el paquete Flash para mostrar los mensajes de errores-->
 	@include('flash::message')

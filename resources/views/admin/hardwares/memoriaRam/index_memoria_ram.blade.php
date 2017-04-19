@@ -2,7 +2,7 @@
 @section('titulo','Listado de memorias')
 @section('contenido')
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de Memorias RAM</h2>
-	<a href="{{route('memoria.ram.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar memoria</a>
+	<a href="{{route('memoria.ram.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar memoria</a> <a href="{{route('memoria.generar-pdf')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i></a>
 	<!-- Formulario para el buscador de Tags-->
     {!! Form::open (['route'=>'memoria.ram.index', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
         <div class="form-group">

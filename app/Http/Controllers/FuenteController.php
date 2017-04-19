@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Requests\FuenteRequest;
 use App\Http\Controllers\Controller;
 use App\Fuente;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class FuenteController extends Controller{
     /**
@@ -112,5 +113,11 @@ class FuenteController extends Controller{
 
         return redirect()->route('fuente.index');
 
+    }
+
+    public function pdfFuente(){
+        $fuentes = Fuente::all();
+        $pdf = PDF::loadView('admin/PDF/pdf_fuentes',['fuentes' => $fuentes]);
+        return $pdf->download('listado_fuentes.pdf');
     }
 }

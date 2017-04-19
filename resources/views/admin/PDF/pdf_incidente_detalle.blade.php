@@ -30,7 +30,7 @@
 				@elseif($incidente->tipo_incidente == "tecnicoRI")
 					<strong>Tipo Incidente:</strong> {{"Red - Internet"}} <br>
 				@else
-					<strong>Tipo Incidente:</strong> {{"Sistema - Consulta"}} <br>
+					<strong>Tipo Incidente:</strong> {{"Consulta general"}} <br>
 				@endif
 				<strong>Prioridad:</strong> {{$incidente->prioridad}} <br>
 				@if($incidente->estado == "abierto")
