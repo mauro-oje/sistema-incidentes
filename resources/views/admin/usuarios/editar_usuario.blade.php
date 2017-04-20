@@ -67,7 +67,7 @@
 				<br>
 				<div class="form-group">
 					<div class="col-xs-offset-2 col-xs-10">
-						{!! form::submit('Editar',['class'=>'btn btn-warning']) !!}
+						{!! form::submit('Grabar',['class'=>'btn btn-warning']) !!}
 						<a href="{{route('usuario.listar')}}" class="btn btn-danger">Cancelar</a>
 					</div>
 				</div>

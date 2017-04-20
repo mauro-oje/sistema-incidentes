@@ -397,7 +397,35 @@ Route::group(['prefix'=>'tecnico-HS','middleware'=>'auth','middleware'=>'level:2
 		'uses'	=>	'ImpresoraController@indexHS',
 		'as'	=>	'impresora.index.hs'
 	]);
-
+	//	:: PDF Componentes ::
+	Route::get('disco-duro/generar-pdf-discos',[
+		'uses'	=>	'DiscoDuroController@pdfDisco',
+		'as'	=>	'disco.duro.generar-pdf-hs'
+	]);
+	Route::get('procesador/generar-pdf-procesadores',[
+		'uses'	=>	'ProcesadorController@pdfProcesador',
+		'as'	=>	'procesador.generar-pdf-hs'
+	]);
+	Route::get('fuente/generar-pdf-fuentes',[
+		'uses'	=>	'FuenteController@pdfFuente',
+		'as'	=>	'fuente.generar-pdf-hs'
+	]);
+	Route::get('impresora/generar-pdf-impresoras',[
+		'uses'	=>	'ImpresoraController@pdfImpresora',
+		'as'	=>	'impresora.generar-pdf-hs'
+	]);
+	Route::get('memoria-ram/generar-pdf-memorias',[
+		'uses'	=>	'MemoriaRamController@pdfMemoria',
+		'as'	=>	'memoria.generar-pdf-hs'
+	]);
+	Route::get('placa-madre/generar-pdf-memorias',[
+		'uses'	=>	'PlacaMadreController@pdfPlaca',
+		'as'	=>	'placa.madre.generar-pdf-hs'
+	]);
+	Route::get('equipo/generar-pdf-equipos',[
+		'uses'	=>	'EquipoController@pdfEquipo',
+		'as'	=>	'equipo.generar-pdf-hs'
+	]);
 });
 
 //							::RUTAS PARA TECNICO-RI::
@@ -447,6 +475,35 @@ Route::group(['prefix'=>'tecnico-RI','middleware'=>'auth','middleware'=>'level:3
 	Route::get('impresora/listado-de-impresoras',[
 		'uses'	=>	'ImpresoraController@indexRI',
 		'as'	=>	'impresora.index.ri'
+	]);
+	//	:: PDF Componentes ::
+	Route::get('disco-duro/generar-pdf-discos',[
+		'uses'	=>	'DiscoDuroController@pdfDisco',
+		'as'	=>	'disco.duro.generar-pdf-ri'
+	]);
+	Route::get('procesador/generar-pdf-procesadores',[
+		'uses'	=>	'ProcesadorController@pdfProcesador',
+		'as'	=>	'procesador.generar-pdf-ri'
+	]);
+	Route::get('fuente/generar-pdf-fuentes',[
+		'uses'	=>	'FuenteController@pdfFuente',
+		'as'	=>	'fuente.generar-pdf-ri'
+	]);
+	Route::get('impresora/generar-pdf-impresoras',[
+		'uses'	=>	'ImpresoraController@pdfImpresora',
+		'as'	=>	'impresora.generar-pdf-ri'
+	]);
+	Route::get('memoria-ram/generar-pdf-memorias',[
+		'uses'	=>	'MemoriaRamController@pdfMemoria',
+		'as'	=>	'memoria.generar-pdf-ri'
+	]);
+	Route::get('placa-madre/generar-pdf-memorias',[
+		'uses'	=>	'PlacaMadreController@pdfPlaca',
+		'as'	=>	'placa.madre.generar-pdf-ri'
+	]);
+	Route::get('equipo/generar-pdf-equipos',[
+		'uses'	=>	'EquipoController@pdfEquipo',
+		'as'	=>	'equipo.generar-pdf-ri'
 	]);
 });
 

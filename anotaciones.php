@@ -1,3 +1,18 @@
+
+    <!-- Formulario para el buscador de Tags-->
+    {!! Form::open (['route'=>'usuario.listar', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
+        <div class="form-group">
+            {!! form::text('name', null, ['class'=>'form-control', 'placeholder'=>'Buscar usuario...', 'aria-describedby'=>'search']) !!}
+            <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
+        </div>
+        {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}
+        <a href="{{route('usuario.listar')}}" class="btn btn-default"> Listar</a>
+    {!! Form::close() !!}
+    <!-- Fin Formulario para el buscador de Tags-->
+
+
+
+
 if($consulta_ip){
             if($consulta_ip->id != $request->id_ip){         
                 $ip_anterior = Ip::find($consulta_ip->id);

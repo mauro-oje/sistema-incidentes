@@ -16,7 +16,7 @@
 						{!! form::text('nombre_area',$area->nombre_area,['class'=>'form-control','required']) !!}
 					</div>
 					<br>
-					<button class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Editar</button>
+					<button class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Grabar</button>
 					<a href="{{route('area.index')}}" class="btn btn-danger"><span class="glyphicon glyphicon-floppy-remove"></span> Cancelar</a>
 				{!! Form::close() !!}
 			</div>

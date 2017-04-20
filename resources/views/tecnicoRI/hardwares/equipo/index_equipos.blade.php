@@ -2,6 +2,8 @@
 @section('titulo','Listado de Equipos')
 @section('contenido')
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de Equipos</h2>
+	<hr>
+	<a href="{{route('equipo.generar-pdf-ri')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Listado de equipos</a>
 	{!! Form::open (['route'=>'equipo.index.ri', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
         <div class="form-group">
             {!! form::text('nombre_equipo', null, ['class'=>'form-control', 'placeholder'=>'Buscar equipo (Ej:PC-001)...', 'aria-describedby'=>'search']) !!}

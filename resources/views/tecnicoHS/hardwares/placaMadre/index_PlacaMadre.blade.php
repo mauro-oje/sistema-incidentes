@@ -2,10 +2,12 @@
 @section('titulo','Listado Placas madres')
 @section('contenido')
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de Placas madres</h2>
+	<hr>
+	<a href="{{route('placa.madre.generar-pdf-hs')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Listado de Placas madres</a>
 	<!-- Formulario para el buscador de Tags-->
     {!! Form::open (['route'=>'placa.madre.index.hs', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
         <div class="form-group">
-            {!! form::text('marca_placa', null, ['class'=>'form-control', 'placeholder'=>'Buscar placa...', 'aria-describedby'=>'search']) !!}
+            {!! form::text('marca_placa', null, ['class'=>'form-control', 'placeholder'=>'Buscar placa (marca)...', 'aria-describedby'=>'search']) !!}
             <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
         </div>
         {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}

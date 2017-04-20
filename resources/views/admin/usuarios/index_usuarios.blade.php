@@ -4,21 +4,10 @@
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Lista de usuarios</h2>
 	<hr>
 	<a href="{{route('user.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar Usuario</a> <a href="{{route('incidente.generar.pdp.usuarios')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i></a>
-
-	<!-- Formulario para el buscador de Tags-->
-    {!! Form::open (['route'=>'usuario.listar', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
-        <div class="form-group">
-            {!! form::text('name', null, ['class'=>'form-control', 'placeholder'=>'Buscar usuario...', 'aria-describedby'=>'search']) !!}
-            <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
-        </div>
-        {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}
-        <a href="{{route('usuario.listar')}}" class="btn btn-default"> Listar</a>
-    {!! Form::close() !!}
-    <!-- Fin Formulario para el buscador de Tags-->
 	<hr>
 	<!--Incluyo el paquete Flash para mostrar los mensajes de errores-->
 	@include('flash::message')
-	<table class="table table-striped table-condensed">
+	<table class="table listado table-striped table-condensed">
 		<thead><div></div>
 			<th>Apellido</th>
 			<th>Nombre</th>
@@ -67,4 +56,38 @@
 		</tbody>
 	</table>
 	{!! $usuarios->render() !!}
+	<script src="{{ asset('plugins/bootstrap/js/jquery.dataTables.min.js') }}"></script>
+	<script src="{{ asset('plugins/bootstrap/js/dataTables.bootstrap.min.js') }}"></script>
+	<script type="text/javascript">
+	      $(document).ready(function(){
+	        $('.listado').DataTable({
+				language:{
+				    "sProcessing":     "Procesando...",
+				    "sLengthMenu":     "Mostrar _MENU_ registros",
+				    "sZeroRecords":    "No se encontraron resultados",
+				    "sEmptyTable":     "Ningún dato disponible en esta tabla",
+				    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+				    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+				    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+				    "sInfoPostFix":    "",
+				    "sSearch":         "Buscar:",
+				    "sUrl":            "",
+				    "sInfoThousands":  ",",
+				    "sLoadingRecords": "Cargando...",
+				    "oPaginate": {
+				        "sFirst":    "Primero",
+				        "sLast":     "Último",
+				        "sNext":     "Siguiente",
+				        "sPrevious": "Anterior"
+				    },
+				    "oAria": {
+				        "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+				        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+				}
+			},
+	          		"columnDefs":[{"orderable": false,"targets":6}]
+	        });
+	     });
+    </script>
+
 @endsection

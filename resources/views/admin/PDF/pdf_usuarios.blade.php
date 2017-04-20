@@ -23,23 +23,23 @@
 					<td>{{$usuario->apellido}} {{$usuario->name}}</td>
 					<td>{{$usuario->email}}</td>
 					@if($usuario->tipo == "tecnicoHS")
-						<td>Hardware/Software</td>
+						<td>{{"Hardware/Software"}}</td>
 					@elseif($usuario->tipo == "tecnicoRI")
-						<td>Red/Internet</td>
+						<td>{{"Red/Internet"}}</td>
 					@elseif($usuario->tipo == "miembro")
-						<td>Miembro</td>
+						<td>{{"Miembro"}}</td>
 					@else
-						<td>Administrador</td>
+						<td>{{"Administrador"}}</td>
 					@endif
-					@if($usuario->oficina){
+					@if($usuario->oficina)
 						<td>{{$usuario->oficina->oficina}}</td>
-					}@else
-						<td>Sin Oficina</td>
+					@else
+						<td>{{"Sin Oficina"}}</td>
 					@endif
 					@if($usuario->oficina and $usuario->oficina->area)
 						<td>{{$usuario->oficina->area->nombre_area}}</td>
 					@else
-						<td>Sin Área</td>
+						<td>{{"Sin Área"}}</td>
 					@endif
 				</tr>
 			@endforeach

@@ -73,7 +73,7 @@
 				</div>
 				<br>
 				<div class="col-xs-offset-2 col-xs-8">
-					<button class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Editar</button>
+					<button class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Grabar</button>
 					<a href="{{route('memoria.ram.index')}}" class="btn btn-danger"><span class="glyphicon glyphicon-floppy-remove"></span>  Cancelar</a>
 				</div>
 			{!! Form::close() !!}

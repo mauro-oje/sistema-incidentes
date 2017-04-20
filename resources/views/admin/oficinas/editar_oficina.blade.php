@@ -34,7 +34,7 @@
 					</div>
 				</div>
 				<br>
-				<button class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Editar</button>
+				<button class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Grabar</button>
 				<a href="{{route('oficina.index')}}" class="btn btn-danger"><span class="glyphicon glyphicon-floppy-remove"></span> Cancelar</a>
 			{!! Form::close() !!}
 		</div>

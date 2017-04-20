@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/css.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/jquery.dataTables.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/jquery.dataTables.min.css') }}">
+    <!--<link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/jquery.dataTables.min.css') }}"> -->
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/dataTables.bootstrap.min.css') }}">
 
     <!-- Submenus Bootstrap core CSS -->
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/bootstrap-submenu-2.0.4/dist/css/bootstrap-submenu.min.css') }}">
@@ -57,11 +58,12 @@
     </section>
 
     <script src="{{ asset('plugins/bootstrap/js/jquery-3.1.1.js') }}"></script>
-    <script src="{{ asset('plugins/bootstrap/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('plugins/bootstrap/js/bootstrap.js') }}"></script>
-    <script src="{{ asset('plugins/Trumbowyg/trumbowyg.js') }}"></script>
+    <script src="{{ asset('plugins/bootstrap/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/bootstrap/js/dataTables.bootstrap.min.js') }}"></script>
     <script src="{{ asset('plugins/js/scripts.js') }}"></script>
-
+    <script src="{{ asset('plugins/Trumbowyg/trumbowyg.js') }}"></script>
+    
     <!-- Script para el Submenu -->
     <script type="text/javascript">
       $(document).ready(function() {

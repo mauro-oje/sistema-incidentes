@@ -2,6 +2,8 @@
 @section('titulo','Listado de Discos')
 @section('contenido')
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de Discos duros</h2>
+	<hr>
+	<a href="{{route('disco.duro.generar-pdf-ri')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Listado de Discos</a>
 	{!! Form::open (['route'=>'disco.duro.index.ri', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
         <div class="form-group">
             {!! form::text('marca_disco', null, ['class'=>'form-control', 'placeholder'=>'Buscar marca...', 'aria-describedby'=>'search']) !!}

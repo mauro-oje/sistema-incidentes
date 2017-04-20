@@ -2,6 +2,8 @@
 @section('titulo','Listado de Impresoras')
 @section('contenido')
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de Impresoras</h2>
+	<hr>
+	<a href="{{route('impresora.generar-pdf-hs')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Listado de Impresoras</a>
 	{!! Form::open (['route'=>'impresora.index.hs', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
         <div class="form-group">
             {!! form::text('marca_impresora', null, ['class'=>'form-control', 'placeholder'=>'Buscar marca...', 'aria-describedby'=>'search']) !!}

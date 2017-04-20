@@ -2,6 +2,8 @@
 @section('titulo','Listado de fuentes')
 @section('contenido')
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de Fuentes</h2>
+	<hr>
+	<a href="{{route('fuente.generar-pdf-ri')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Listado de Fuentes</a>
 	{!! Form::open (['route'=>'fuente.index.ri', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
         <div class="form-group">
             {!! form::text('marca_fuente', null, ['class'=>'form-control', 'placeholder'=>'Buscar marca...', 'aria-describedby'=>'search']) !!}

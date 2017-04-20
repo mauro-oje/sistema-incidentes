@@ -3,6 +3,8 @@
 @section('contenido')
 
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Lista de usuarios</h2>
+	<hr>
+	<a href="{{route('incidente.generar.pdp.usuarios')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Listado de usuarios</a>
 	<!-- Formulario para el buscador de Tags-->
     {!! Form::open (['route'=>'usuario.listar.tecnicohs', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
         <div class="form-group">
