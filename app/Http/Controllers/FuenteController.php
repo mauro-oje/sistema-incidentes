@@ -18,16 +18,19 @@ class FuenteController extends Controller{
      */
     public function index(Request $request){
         
-        $fuentes = Fuente::buscar(request()->marca_fuente)->orderBy('id','DESC')->paginate(10);
+        //$fuentes = Fuente::buscar(request()->marca_fuente)->orderBy('id','DESC')->paginate(10);
+        $fuentes = Fuente::all();
         return view('admin/hardwares/fuente/index_fuente',compact('fuentes'));
 
     }
     public function indexHS(Request $request){ 
-        $fuentes = Fuente::buscar(request()->marca_fuente)->orderBy('id','DESC')->paginate(10);
+        //$fuentes = Fuente::buscar(request()->marca_fuente)->orderBy('id','DESC')->paginate(10);
+        $fuentes = Fuente::all();
         return view('tecnicoHS/hardwares/fuente/index_fuente',compact('fuentes'));
     }
     public function indexRI(Request $request){  
-        $fuentes = Fuente::buscar(request()->marca_fuente)->orderBy('id','DESC')->paginate(10);
+        //$fuentes = Fuente::buscar(request()->marca_fuente)->orderBy('id','DESC')->paginate(10);
+        $fuentes = Fuente::all();
         return view('tecnicoRI/hardwares/fuente/index_fuente',compact('fuentes'));
     }
 

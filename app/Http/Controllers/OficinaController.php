@@ -18,7 +18,8 @@ class OficinaController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        $oficinas = Oficina::orderBy('id','DES')->paginate(50);
+        //$oficinas = Oficina::orderBy('id','DES')->paginate(50);
+        $oficinas = Oficina::all();
         return view('admin/oficinas/index_oficina',compact('oficinas'));
     }
 
@@ -28,9 +29,7 @@ class OficinaController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function create(){
-        
         $areas = Area::all();
-
         return view('admin/oficinas/crear_oficina',compact('areas'));
     }
 

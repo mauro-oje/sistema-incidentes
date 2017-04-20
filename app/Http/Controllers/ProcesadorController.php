@@ -19,18 +19,20 @@ class ProcesadorController extends Controller{
     public function index(Request $request){
 
         //$procesadores = Procesador::orderBy('id','DESC')->paginate(10);
-        $procesadores = Procesador::buscar(request()->modelo_procesador)->orderBy('id','DESC')->paginate(10);
+        //$procesadores = Procesador::buscar(request()->modelo_procesador)->orderBy('id','DESC')->paginate(10);
+        $procesadores = Procesador::all();
         return view('admin/hardwares/procesador/index_procesador',compact('procesadores'));
-        
     }
 
     public function indexHS(Request $request){
-        $procesadores = Procesador::buscar(request()->modelo_procesador)->orderBy('id','DESC')->paginate(10);
+        //$procesadores = Procesador::buscar(request()->modelo_procesador)->orderBy('id','DESC')->paginate(10);
+        $procesadores = Procesador::all();
         return view('tecnicoHS/hardwares/procesador/index_procesador',compact('procesadores'));
     }
 
     public function indexRI(Request $request){
-        $procesadores = Procesador::buscar(request()->modelo_procesador)->orderBy('id','DESC')->paginate(10);
+        //$procesadores = Procesador::buscar(request()->modelo_procesador)->orderBy('id','DESC')->paginate(10);
+        $procesadores = Procesador::all();
         return view('tecnicoRI/hardwares/procesador/index_procesador',compact('procesadores'));
     }
 

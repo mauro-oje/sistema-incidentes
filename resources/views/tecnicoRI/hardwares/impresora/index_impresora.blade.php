@@ -15,7 +15,7 @@
 	<hr>
 	<!--Incluyo el paquete Flash para mostrar los mensajes de errores-->
 	@include('flash::message')
-	<table class="table table-striped">
+	<table class="table listado table-striped">
 		<thead>
 			<th>Marca</th>
 			<th>Modelo</th>
@@ -51,5 +51,14 @@
 			@endforeach
 		</tbody>
 	</table>
-	{!! $impresoras->render() !!}
+@endsection
+@section('js')
+	<script type="text/javascript">
+        $('.listado').DataTable({
+			language: {
+				url: '/Laravel/SistemaIncidentes/public/plugins/bootstrap/js/dataTables.spanish.json'
+				//url: '/sistema-incidentes/public/plugins/bootstrap/js/dataTables.spanish.json'
+			}
+        });
+	</script>
 @endsection

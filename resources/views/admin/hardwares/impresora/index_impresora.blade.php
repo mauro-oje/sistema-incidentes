@@ -3,18 +3,10 @@
 @section('contenido')
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de Impresoras</h2>
 	<a href="{{route('impresora.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar impresora</a> <a href="{{route('impresora.generar-pdf')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i></a>
-	{!! Form::open (['route'=>'impresora.index', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
-        <div class="form-group">
-            {!! form::text('marca_impresora', null, ['class'=>'form-control', 'placeholder'=>'Buscar marca...', 'aria-describedby'=>'search']) !!}
-            <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
-        </div>
-        {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}
-        <a href="{{route('impresora.index')}}" class="btn btn-default"> Listar</a>
-    {!! Form::close() !!}
 	<hr>
 	<!--Incluyo el paquete Flash para mostrar los mensajes de errores-->
 	@include('flash::message')
-	<table class="table table-striped">
+	<table class="table listado table-striped">
 		<thead>
 			<th>Marca</th>
 			<th>Modelo</th>
@@ -55,5 +47,15 @@
 			@endforeach
 		</tbody>
 	</table>
-	{!! $impresoras->render() !!}
+@endsection
+@section('js')
+	<script type="text/javascript">
+        $('.listado').DataTable({
+			language: {
+				url: '/Laravel/SistemaIncidentes/public/plugins/bootstrap/js/dataTables.spanish.json'
+				//url: '/sistema-incidentes/public/plugins/bootstrap/js/dataTables.spanish.json'
+			},
+          		"columnDefs":[{"orderable": false,"targets":4}]
+        });
+	</script>
 @endsection

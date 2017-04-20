@@ -17,18 +17,20 @@ class DiscoDuroController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request){
-
-        $discos = DiscoDuro::buscar(request()->marca_disco)->orderBy('id','DESC')->paginate(10);
+        //$discos = DiscoDuro::buscar(request()->marca_disco)->orderBy('id','DESC')->paginate(10);
+        $discos = DiscoDuro::all();
         return view('admin/hardwares/discoDuro/index_disco_duro',compact('discos'));
         
     }
     public function indexHS(Request $request){
-        $discos = DiscoDuro::buscar(request()->marca_disco)->orderBy('id','DESC')->paginate(10);
+        //$discos = DiscoDuro::buscar(request()->marca_disco)->orderBy('id','DESC')->paginate(10);
+        $discos = DiscoDuro::all();
         return view('tecnicoHS/hardwares/discoDuro/index_disco_duro',compact('discos'));
     
     }
     public function indexRI(Request $request){
-        $discos = DiscoDuro::buscar(request()->marca_disco)->orderBy('id','DESC')->paginate(10);
+        //$discos = DiscoDuro::buscar(request()->marca_disco)->orderBy('id','DESC')->paginate(10);
+        $discos = DiscoDuro::all();
         return view('tecnicoRI/hardwares/discoDuro/index_disco_duro',compact('discos'));
     
     }

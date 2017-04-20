@@ -20,16 +20,19 @@ class ImpresoraController extends Controller{
      */
     public function index(Request $request){
         
-        $impresoras = Impresora::buscar(request()->marca_impresora)->orderBy('id','DESC')->paginate(10);
+        //$impresoras = Impresora::buscar(request()->marca_impresora)->orderBy('id','DESC')->paginate(10);
+        $impresoras = Impresora::all();
         return view('admin/hardwares/impresora/index_impresora',compact('impresoras'));
     }
 
     public function indexHS(Request $request){
-        $impresoras = Impresora::buscar(request()->marca_impresora)->orderBy('id','DESC')->paginate(10);
+        //$impresoras = Impresora::buscar(request()->marca_impresora)->orderBy('id','DESC')->paginate(10);
+        $impresoras = Impresora::all();
         return view('tecnicoHS/hardwares/impresora/index_impresora',compact('impresoras'));
     }
     public function indexRI(Request $request){ 
-        $impresoras = Impresora::buscar(request()->marca_impresora)->orderBy('id','DESC')->paginate(10);
+        //$impresoras = Impresora::buscar(request()->marca_impresora)->orderBy('id','DESC')->paginate(10);
+        $impresoras = Impresora::all();
         return view('tecnicoRI/hardwares/impresora/index_impresora',compact('impresoras'));
     }
 

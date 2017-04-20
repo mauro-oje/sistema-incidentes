@@ -18,18 +18,20 @@ class PlacaMadreController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request){
-
-        $placas_madres = PlacaMadre::buscar(request()->marca_placa)->orderBy('id','DES')->paginate(10);
+        //$placas_madres = PlacaMadre::buscar(request()->marca_placa)->orderBy('id','DES')->paginate(10);
+        $placas_madres = PlacaMadre::all();
         return view('admin/hardwares/placaMadre/index_PlacaMadre',compact('placas_madres'));
     }
 
     public function indexHS(Request $request){
         //$placas_madres = PlacaMadre::orderBy('id','DES')->paginate(10);
-        $placas_madres = PlacaMadre::buscar(request()->marca_placa)->orderBy('id','DES')->paginate(10);
+        //$placas_madres = PlacaMadre::buscar(request()->marca_placa)->orderBy('id','DES')->paginate(10);
+        $placas_madres = PlacaMadre::all();
         return view('tecnicoHS/hardwares/placaMadre/index_PlacaMadre',compact('placas_madres'));
     }
     public function indexRI(Request $request){
-        $placas_madres = PlacaMadre::buscar(request()->marca_placa)->orderBy('id','DES')->paginate(10);
+        //$placas_madres = PlacaMadre::buscar(request()->marca_placa)->orderBy('id','DES')->paginate(10);
+        $placas_madres = PlacaMadre::all();
         return view('tecnicoRI/hardwares/placaMadre/index_PlacaMadre',compact('placas_madres'));
     }
 
@@ -39,7 +41,6 @@ class PlacaMadreController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function create(){
-        
         return view('admin/hardwares/placaMadre/crear_PlacaMadre');
     }
 

@@ -4,20 +4,10 @@
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de Procesadores</h2>
 	<hr>
 	<a href="{{route('procesador.generar-pdf-hs')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Listado de Procesadores</a>
-	<!-- Formulario para el buscador de Tags-->
-    {!! Form::open (['route'=>'procesador.index.tecnicohs', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
-        <div class="form-group">
-            {!! form::text('modelo_procesador', null, ['class'=>'form-control', 'placeholder'=>'Buscar modelo...', 'aria-describedby'=>'search']) !!}
-            <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
-        </div>
-        {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}
-        <a href="{{route('procesador.index.tecnicohs')}}" class="btn btn-default"> Listar</a>
-    {!! Form::close() !!}
-    <!-- Fin Formulario para el buscador de Tags-->
 	<hr>
 	<!--Incluyo el paquete Flash para mostrar los mensajes de errores-->
 	@include('flash::message')
-	<table class="table table-striped">
+	<table class="table listado table-striped">
 		<thead><div></div>
 			<th>Marca</th>
 			<th>Modelo</th>
@@ -43,5 +33,14 @@
 			@endforeach
 		</tbody>
 	</table>
-	{!! $procesadores->render() !!}
+@endsection
+@section('js')
+	<script type="text/javascript">
+        $('.listado').DataTable({
+			language: {
+				url: '/Laravel/SistemaIncidentes/public/plugins/bootstrap/js/dataTables.spanish.json'
+				//url: '/sistema-incidentes/public/plugins/bootstrap/js/dataTables.spanish.json'
+			}
+        });
+	</script>
 @endsection

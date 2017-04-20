@@ -1,3 +1,74 @@
+Buscar de placa madre
+
+    <!-- Formulario para el buscador de Tags-->
+    {!! Form::open (['route'=>'placa.madre.index', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
+        <div class="form-group">
+            {!! form::text('marca_placa', null, ['class'=>'form-control', 'placeholder'=>'Buscar placa...', 'aria-describedby'=>'search']) !!}
+            <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
+        </div>
+        {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}
+        <a href="{{route('placa.madre.index')}}" class="btn btn-default"> Listar</a>
+    {!! Form::close() !!}
+
+    <!-- Formulario para el buscador de Tags-->
+    {!! Form::open (['route'=>'procesador.index', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
+        <div class="form-group">
+            {!! form::text('modelo_procesador', null, ['class'=>'form-control', 'placeholder'=>'Buscar modelo...', 'aria-describedby'=>'search']) !!}
+            <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
+        </div>
+        {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}
+        <a href="{{route('procesador.index')}}" class="btn btn-default"> Listar</a>
+    {!! Form::close() !!}
+    <!-- Fin Formulario para el buscador de Tags-->
+
+    <!-- Formulario para el buscador de Tags-->
+    {!! Form::open (['route'=>'memoria.ram.index', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
+        <div class="form-group">
+            {!! form::text('marca_memoria', null, ['class'=>'form-control', 'placeholder'=>'Buscar marca...', 'aria-describedby'=>'search']) !!}
+            <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
+        </div>
+        {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}
+        <a href="{{route('memoria.ram.index')}}" class="btn btn-default"> Listar</a>
+    {!! Form::close() !!}
+    <!-- Fin Formulario para el buscador de Tags-->
+
+    {!! Form::open (['route'=>'disco.duro.index', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
+        <div class="form-group">
+            {!! form::text('marca_disco', null, ['class'=>'form-control', 'placeholder'=>'Buscar marca...', 'aria-describedby'=>'search']) !!}
+            <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
+        </div>
+        {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}
+        <a href="{{route('disco.duro.index')}}" class="btn btn-default"> Listar</a>
+    {!! Form::close() !!}
+    {!! Form::open (['route'=>'fuente.index', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
+        <div class="form-group">
+            {!! form::text('marca_fuente', null, ['class'=>'form-control', 'placeholder'=>'Buscar marca...', 'aria-describedby'=>'search']) !!}
+            <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
+        </div>
+        {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}
+        <a href="{{route('fuente.index')}}" class="btn btn-default"> Listar</a>
+    {!! Form::close() !!}
+{!! Form::open (['route'=>'impresora.index', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
+        <div class="form-group">
+            {!! form::text('marca_impresora', null, ['class'=>'form-control', 'placeholder'=>'Buscar marca...', 'aria-describedby'=>'search']) !!}
+            <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
+        </div>
+        {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}
+        <a href="{{route('impresora.index')}}" class="btn btn-default"> Listar</a>
+    {!! Form::close() !!}
+
+
+    
+{!! Form::open (['route'=>'impresora.index.hs', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
+        <div class="form-group">
+            {!! form::text('marca_impresora', null, ['class'=>'form-control', 'placeholder'=>'Buscar marca...', 'aria-describedby'=>'search']) !!}
+            <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
+        </div>
+        {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}
+        <a href="{{route('impresora.index.hs')}}" class="btn btn-default"> Listar</a>
+    {!! Form::close() !!}
+
+
 @extends('admin.plantilla.principal')
 @section('titulo','Listado de Placas madres')
 @section('contenido')

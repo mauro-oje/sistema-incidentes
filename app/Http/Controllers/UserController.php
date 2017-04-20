@@ -35,12 +35,14 @@ class UserController extends Controller{
     }
 
     public function listarUsuariosHS(Request $request){
-        $usuarios = User::buscar(request()->name)->orderBy('id','ASC')->paginate(50);
+        //$usuarios = User::buscar(request()->name)->orderBy('id','ASC')->paginate(50);
+        $usuarios = User::all();
         return view('tecnicoHS/usuarios/index_usuarios',compact('usuarios'));
     }
 
     public function listarUsuariosRI(Request $request){
-        $usuarios = User::buscar(request()->name)->orderBy('id','ASC')->paginate(50);
+        //$usuarios = User::buscar(request()->name)->orderBy('id','ASC')->paginate(50);
+        $usuarios = User::all();
         return view('tecnicoRI/usuarios/index_usuarios',compact('usuarios'));
     }
 

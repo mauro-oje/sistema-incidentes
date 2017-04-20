@@ -17,9 +17,8 @@ class AreaController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        
-        $areas = Area::orderBy('id','DESC')->paginate(50);
-
+        //$areas = Area::orderBy('id','DESC')->paginate(50);
+        $areas = Area::all();
         return view('admin/areas/index_area',compact('areas'));
 
     }

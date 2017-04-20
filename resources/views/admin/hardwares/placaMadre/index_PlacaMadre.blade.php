@@ -3,25 +3,17 @@
 @section('contenido')
 	<h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de Placas madres</h2>
 	<a href="{{route('placa.madre.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar placa</a> <a href="{{route('placa.madre.generar-pdf')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i></a>
-	<!-- Formulario para el buscador de Tags-->
-    {!! Form::open (['route'=>'placa.madre.index', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
-        <div class="form-group">
-            {!! form::text('marca_placa', null, ['class'=>'form-control', 'placeholder'=>'Buscar placa...', 'aria-describedby'=>'search']) !!}
-            <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
-        </div>
-        {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}
-        <a href="{{route('placa.madre.index')}}" class="btn btn-default"> Listar</a>
-    {!! Form::close() !!}
+	
     <!-- Fin Formulario para el buscador de Tags-->
 	<!--Incluyo el paquete Flash para mostrar los mensajes de errores-->
 	<hr>
 	@include('flash::message')
-	<table class="table table-striped">
+	<table class="table listado table-striped">
 		<thead><div></div>
 			<th>Marca</th>
 			<th>Modelo</th>
 			<th>Version</th>
-			<th>Discponible</th>
+			<th>¿Disponible?</th>
 			<th>Acciones</th>
 		</thead>
 		<tbody>
@@ -56,5 +48,16 @@
 	        <div class="modal-content" id="editar_modal"></div>
 	    </div>
 	</div>
-	{!! $placas_madres->render() !!}
+
+@endsection
+@section('js')
+	<script type="text/javascript">
+        $('.listado').DataTable({
+			language: {
+				url: '/Laravel/SistemaIncidentes/public/plugins/bootstrap/js/dataTables.spanish.json'
+				//url: '/sistema-incidentes/public/plugins/bootstrap/js/dataTables.spanish.json'
+			},
+          		"columnDefs":[{"orderable": false,"targets":4}]
+        });
+	</script>
 @endsection

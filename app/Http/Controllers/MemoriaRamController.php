@@ -17,17 +17,18 @@ class MemoriaRamController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request){
-
-        $memorias = MemoriaRam::buscar(request()->marca_memoria)->orderBy('id','DES')->paginate(10);
+        //$memorias = MemoriaRam::buscar(request()->marca_memoria)->orderBy('id','DES')->paginate(10);
+        $memorias = MemoriaRam::all();
         return view('admin/hardwares/memoriaRam/index_memoria_ram',compact('memorias'));
-
     }
     public function indexHS(Request $request){
-        $memorias = MemoriaRam::buscar(request()->marca_memoria)->orderBy('id','DES')->paginate(10);
+        //$memorias = MemoriaRam::buscar(request()->marca_memoria)->orderBy('id','DES')->paginate(10);
+        $memorias = MemoriaRam::all();
         return view('tecnicoHS/hardwares/memoriaRam/index_memoria_ram',compact('memorias'));
     }
     public function indexRI(Request $request){
-        $memorias = MemoriaRam::buscar(request()->marca_memoria)->orderBy('id','DES')->paginate(10);
+        //$memorias = MemoriaRam::buscar(request()->marca_memoria)->orderBy('id','DES')->paginate(10);
+        $memorias = MemoriaRam::all();
         return view('tecnicoRI/hardwares/memoriaRam/index_memoria_ram',compact('memorias'));
     }
 
