@@ -18,7 +18,7 @@ class OficinaController extends Controller{
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        $oficinas = Oficina::orderBy('id','DES')->paginate(10);
+        $oficinas = Oficina::orderBy('id','DES')->paginate(50);
         return view('admin/oficinas/index_oficina',compact('oficinas'));
     }
 

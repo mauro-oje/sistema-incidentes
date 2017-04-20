@@ -21,25 +21,26 @@ class UserController extends Controller{
      */
     public function index(){
 
-        $usuarios = User::orderBy('id','DES')->paginate(10);
-        
+        //$usuarios = User::orderBy('id','DES')->paginate(50);
+        $usuarios = User::all();
         return view('admin/usuarios/index_usuarios',compact('usuarios'));
     }
 
     public function listar_usuarios(Request $request){
         //$usuarios = User::orderBy('id','DES')->paginate(10);
-        $usuarios = User::buscar(request()->name)->orderBy('id','ASC')->paginate(10);
+        //$usuarios = User::buscar(request()->name)->orderBy('id','ASC')->paginate(50);
+        $usuarios = User::all();
 
         return view('admin/usuarios/index_usuarios',compact('usuarios'));
     }
 
     public function listarUsuariosHS(Request $request){
-        $usuarios = User::buscar(request()->name)->orderBy('id','ASC')->paginate(10);
+        $usuarios = User::buscar(request()->name)->orderBy('id','ASC')->paginate(50);
         return view('tecnicoHS/usuarios/index_usuarios',compact('usuarios'));
     }
 
     public function listarUsuariosRI(Request $request){
-        $usuarios = User::buscar(request()->name)->orderBy('id','ASC')->paginate(10);
+        $usuarios = User::buscar(request()->name)->orderBy('id','ASC')->paginate(50);
         return view('tecnicoRI/usuarios/index_usuarios',compact('usuarios'));
     }
 

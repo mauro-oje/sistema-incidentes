@@ -1,3 +1,110 @@
+@extends('admin.plantilla.principal')
+@section('titulo','Listado de Placas madres')
+@section('contenido')
+    <h2 class="text-center"><i class="fa fa-list-alt" aria-hidden="true"></i> Listado de Placas madres</h2>
+    <a href="{{route('placa.madre.crear')}}" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar placa</a> <a href="{{route('placa.madre.generar-pdf')}}" class="btn btn-danger"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i></a>
+    <!-- Formulario para el buscador de Tags-->
+    {!! Form::open (['route'=>'placa.madre.index', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}
+        <div class="form-group">
+            {!! form::text('marca_placa', null, ['class'=>'form-control', 'placeholder'=>'Buscar placa...', 'aria-describedby'=>'search']) !!}
+            <!-- <span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span> -->
+        </div>
+        {!! form::submit('Buscar',['class'=>'btn btn-default']) !!}
+        <a href="{{route('placa.madre.index')}}" class="btn btn-default"> Listar</a>
+    {!! Form::close() !!}
+    <!-- Fin Formulario para el buscador de Tags-->
+    <!--Incluyo el paquete Flash para mostrar los mensajes de errores-->
+    <hr>
+    @include('flash::message')
+    <table class="table table-striped">
+        <thead><div></div>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Version</th>
+            <th>Discponible</th>
+            <th>Acciones</th>
+        </thead>
+        <tbody>
+            @foreach($placas_madres as $placa)
+                <tr>
+                    <td>{{$placa->marca_placa}}</td>
+                    @if($placa->modelo_placa)
+                        <td>{{$placa->modelo_placa}}</td>
+                    @else
+                        <td>{{"Sin modelo"}}</td>
+                    @endif
+                    @if($placa->version)
+                        <td>{{$placa->version}}</td>
+                    @else
+                        <td>{{'Sin version'}}</td>
+                    @endif
+                    @if($placa->disponible == "si")
+                        <td><span class="label label-success">{{$placa->disponible}}</span></td>
+                    @else
+                        <td><span class="label label-default">{{$placa->disponible}}</span></td>
+                    @endif
+                    <td>
+                        <a href="{{route('placa.madre.editar',$placa->id)}}" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-edit"></span> Editar</a>
+                        <a href="{{route('placa.madre.borrar',$placa->id)}}" class="btn btn-sm btn-danger" onclick="return confirm('¿Esta seguro que desea borrar este registro?')"><span class="glyphicon glyphicon-trash"></span> Borrar</a>
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+    <div class="modal fade" id="editar_modal_id" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="editar_modal"></div>
+        </div>
+    </div>
+    {!! $placas_madres->render() !!}
+@endsection
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.listado').DataTable({
+            language:{
+                "sProcessing":     "Procesando...",
+                "sLengthMenu":     "Mostrar _MENU_ registros",
+                "sZeroRecords":    "No se encontraron resultados",
+                "sEmptyTable":     "Ningún dato disponible en esta tabla",
+                "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+                "sInfoPostFix":    "",
+                "sSearch":         "Buscar:",
+                "sUrl":            "",
+                "sInfoThousands":  ",",
+                "sLoadingRecords": "Cargando...",
+                "oPaginate": {
+                    "sFirst":    "Primero",
+                    "sLast":     "Último",
+                    "sNext":     "Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "oAria": {
+                    "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+            }
+},
+                "columnDefs":[{"orderable": false,"targets":1}]
+        });
+      });
+    </script>
+
+
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/css.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/jquery.dataTables.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/jquery.dataTables.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/dataTables.bootstrap.min.css') }}">
+
+    <!-- Trumbowyg CSS -->
+    <link rel="stylesheet" href="{{ asset('plugins/Trumbowyg/ui/trumbowyg.css') }}">
 
     <!-- Formulario para el buscador de Tags-->
     {!! Form::open (['route'=>'usuario.listar', 'method'=>'GET', 'class'=>'navbar-form pull-right']) !!}

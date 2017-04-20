@@ -14,16 +14,13 @@
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/css.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/jquery.dataTables.min.css') }}">
-    <!--<link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/jquery.dataTables.min.css') }}"> -->
+    <!--link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/jquery.dataTables.min.css') }}"-->
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/dataTables.bootstrap.min.css') }}">
 
     <!-- Submenus Bootstrap core CSS -->
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/bootstrap-submenu-2.0.4/dist/css/bootstrap-submenu.min.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
-    <!-- Trumbowyg CSS -->
-    <link rel="stylesheet" href="{{ asset('plugins/Trumbowyg/ui/trumbowyg.css') }}">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -41,11 +38,11 @@
 
   <body>
     
-    <!--Incluyo el scrip para tener Jquery-->
+    <!--Incluyo el scrip para tener Jquery
     <script
           src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
           crossorigin="anonymous">
-    </script>
+    </script-->
     
     @include('admin.plantilla.partes.barra_nav')
 
