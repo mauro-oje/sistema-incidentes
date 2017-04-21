@@ -43,8 +43,8 @@
 	<script type="text/javascript">
         $('.listado').DataTable({
 			language: {
-				url: '/Laravel/SistemaIncidentes/public/plugins/bootstrap/js/dataTables.spanish.json'
-				//url: '/sistema-incidentes/public/plugins/bootstrap/js/dataTables.spanish.json'
+				//url: '/Laravel/SistemaIncidentes/public/plugins/bootstrap/js/dataTables.spanish.json'
+				url: '/sistema-incidentes/public/plugins/bootstrap/js/dataTables.spanish.json'
 			},
           		"columnDefs":[{"orderable": false,"targets":6}]
         });
