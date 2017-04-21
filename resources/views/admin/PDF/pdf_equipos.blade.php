@@ -14,7 +14,7 @@
 	</head>
 	<body>
 	<hr>
-	<div id="header-top">
+	<div>
 		<h3 class="centro" >Listado de Equipos</h3>
 	</div>
 	<hr>
