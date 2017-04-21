@@ -297,7 +297,7 @@ class EquipoController extends Controller{
 
     public function pdfEquipo(){
         $equipos = Equipo::all();
-        $pdf = PDF::loadView('admin/PDF/pdf_Equipos',['equipos' => $equipos]);
+        $pdf = PDF::loadView('admin/PDF/pdf_equipos',['equipos' => $equipos]);
         return $pdf->download('listado_equipos.pdf');
     }
 }
