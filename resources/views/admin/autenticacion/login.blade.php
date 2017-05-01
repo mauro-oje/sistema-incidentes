@@ -101,7 +101,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Sisitema de gestión de Incidentes</h1>
+        <h1>Sistema de gestión de Incidentes</h1>
         <p>Bienvenidos al sistema de Manuales en Línea de Argentina.</p>
         <!--  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
       </div>
