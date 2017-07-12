@@ -45,7 +45,7 @@
 				<br>
 				<div class="form-group">
 					<div class="col-xs-offset-2 col-xs-10">
-						<button class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Resgistrar</button>
+						<button class="btn btn-primary"><span class="glyphicon glyphicon-floppy-saved"></span> Registrar</button>
 						@if(Auth::user()->tipo == "miembro")
 							<a href="{{route('incidente.listado.miembros')}}" class="btn btn-danger"><span class="glyphicon glyphicon-floppy-remove"></span> Cancelar</a>
 						@else
