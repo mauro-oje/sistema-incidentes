@@ -182,7 +182,7 @@
 	</div>
 
 	<script>
-		$('#id_memoria').change(function(){
+		$("#id_memoria").change(function(){
 			var id_memoria = $(this).val();
 			$.get('cargar_memoria', {id_memoria: id_memoria}, function(html){
 				$("#mem2").html(html);
